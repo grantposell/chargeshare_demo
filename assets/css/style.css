@@ -3,11 +3,13 @@
 }
 
 .section-one {
-    background-image: url("./images/test-photo.jpg");
+    background-image: url("../images/test-photo.jpg");
     height: 200px;
     background-repeat: no-repeat;
 }
-
+h1{
+    color: blueviolet;
+}
 p {
     font-family: 'Crimson Text', serif;
 }
