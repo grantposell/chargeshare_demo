@@ -1,0 +1,19 @@
+.nav-item {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section-one {
+    background-image: url("./images/test-photo.jpg");
+    height: 200px;
+    background-repeat: no-repeat;
+}
+
+p {
+    font-family: 'Crimson Text', serif;
+}
+
+.about-section {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
