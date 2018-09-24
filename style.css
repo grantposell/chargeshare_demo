@@ -4,11 +4,11 @@
 
 .section-one {
     background-image: url("./images/test-photo.jpg");
-    height: 200px;
-    background-repeat: no-repeat;
+    height: 700px;
+    /* background-repeat: no-repeat; */
 }
 
-p {
+p, ul, h6 {
     font-family: 'Crimson Text', serif;
 }
 
@@ -16,4 +16,10 @@ p {
     text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.footer {
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
