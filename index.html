@@ -14,7 +14,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Mukta+Malar|Noto+Serif|Source+Sans+Pro" rel="stylesheet">
 
 </head>
@@ -47,59 +47,37 @@
     <div class="container-fluid section-one">
         <!-- <img src="./images/test-photo.jpg"> -->
         <!-- TYPING WORDS -->
+        <h1 id="typed1">Own the Future of
+            <br>
+            Electric <span id="typed2"></span>
 
+        </h1>
     </div>
 
     <div class="container-fluid about-section">
         <p>With ChargeShare, you have the ability to travel anywhere in United States. Charge at any station using our
             chargers and share in the profits through an opportunity to personally invest in the network.</p>
-        <img src="images/car.jpg">
+        <img src="./assets/images/car.jpg">
     </div>
-
-    <div class="container-fluid Social">
-        <div class="row social">
-            Social Media Links Here
-        </div>
-        <div class="row footer">
-            <div class="col-md-4">
-                <h6>Quick Links</h6>
-                <ul>
-                    <li>
-                        Link 1
-                    </li>
-                    <li>
-                        Link 2
-                    </li>
-                    <li>
-                        Link 3
-                    </li>
-                    <li>
-                        Link 4
-                    </li>
-                </ul>
-
-            </div>
-            <div class="col-md-4">
-                ChargeShare
-            </div>
-            <div class="col-md-4">
-                <h6>Contact Us</h6>
-                <p>1234 ChargeShare Lane
-                <br>
-                Environment Friendly, State 01234
-                <br>
-                <br>
-                (123) 555-0000
-                <br>
-                <br>
-                info@chargeshare.com
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
+    <script src="./assets/js/typed.js">
+    </script>
+    <script type="text/javascript">
+        var typed = new Typed("#typed2", {
+            strings: ["Energy", "Transportation", "Mobility"],
+            typeSpeed: 150,
+            backSpeed: 100,
+            startDelay: 100,
+            fadeOut: true,
+            loop: true
+        });
+        // $('document').ready(function () {
+        //     var typed = new Typed('#typed2', {
+        //         stringsElement: "Mobility",
+        //         backSpeed: 40,
+        //         typeSpeed: 40
+        //     });
+        // });
+    </script>
 </body>
 
 </html>
