@@ -18,29 +18,22 @@
 h1{
     color: blueviolet;
 }
-p {
+p,
+ul,
+h6 {
     font-family: 'Crimson Text', serif;
 }
-
-    p,
-    ul,
-    h6 {
-        font-family: 'Crimson Text', serif;
+.about-section {
+     text-align: center;
     }
-
-    .about-section {
-        text-align: center;
-    }
-
-    .about-paragraph {
+.about-paragraph {
         font-size: 24px;
     }
 
-    #cars {
+#cars {
         width: 900px;
     }
-
-    .footer {
+.footer {
         align-content: center;
         margin-top: 20px;
         margin-bottom: 20px;
