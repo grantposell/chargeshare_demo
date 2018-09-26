@@ -1,11 +1,16 @@
+.bg-light {
+    background-color: #065143!important;
+}
+
 .nav-item {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 .section-one {
-    background-image: url("../images/test-photo.jpg");
-    height: 200px;
+    background-image: url("../images/background.png");
+    height: 300px;
     background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 #map{
     height: 500px;
@@ -17,8 +22,26 @@ p {
     font-family: 'Crimson Text', serif;
 }
 
-.about-section {
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
+    p,
+    ul,
+    h6 {
+        font-family: 'Crimson Text', serif;
+    }
+
+    .about-section {
+        text-align: center;
+    }
+
+    .about-paragraph {
+        font-size: 24px;
+    }
+
+    #cars {
+        width: 900px;
+    }
+
+    .footer {
+        align-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
