@@ -55,7 +55,7 @@ ul {
     text-align: center;
 }
 
-h4 {
+h5 {
     text-decoration: underline;
 }
 
@@ -79,12 +79,24 @@ h6 {
     text-align: center;
 }
 
+.card {
+    margin-bottom: 10px;
+}
+
+.justify-content-center {
+    margin-right: 45px;
+}
+
 
 .social {
     background-color: #8FD5A6;
     color: #ffffff;
     font-weight: bold;
     margin-top: 10px;
+}
+
+i {
+    margin-left: 15px;
 }
 
 
