@@ -1,3 +1,7 @@
+body {
+    overflow: scroll;
+}
+
 .bg-light {
     background-color: #065143 !important;
 }
@@ -26,7 +30,7 @@
 }
 
 h1 {
-    color: white;;
+    color: white;
 }
 
 p,
@@ -39,7 +43,20 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    
+
+}
+
+.contact-header {
+    margin-bottom: 40px;
+}
+
+.contact-one,
+.contact-two {
+    text-align: center;
+}
+
+h5 {
+    text-decoration: underline;
 }
 
 h6 {
@@ -58,11 +75,28 @@ h6 {
     width: 900px;
 }
 
+.contact {
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.justify-content-center {
+    margin-right: 45px;
+}
+
+
 .social {
     background-color: #8FD5A6;
-    color: #ffffff; 
+    color: #ffffff;
     font-weight: bold;
     margin-top: 10px;
+}
+
+i {
+    margin-left: 15px;
 }
 
 
@@ -71,4 +105,5 @@ h6 {
     background-color: #065143;
     align-content: center;
     text-align: center;
+
 }
