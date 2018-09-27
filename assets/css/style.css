@@ -1,9 +1,17 @@
 .bg-light {
-    background-color: #065143!important;
+    background-color: #065143 !important;
 }
 
 .nav-item {
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav-link {
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    color: #8FD5A6;
 }
 
 .section-one {
@@ -12,29 +20,55 @@
     background-repeat: no-repeat;
     /* background-repeat: no-repeat; */
 }
-#map{
+
+#map {
     height: 500px;
 }
-h1{
-    color: blueviolet;
+
+h1 {
+    color: white;;
 }
+
 p,
 ul,
 h6 {
     font-family: 'Crimson Text', serif;
 }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+h6 {
+    font-weight: bold;
+}
+
 .about-section {
-     text-align: center;
-    }
+    text-align: center;
+}
+
 .about-paragraph {
-        font-size: 24px;
-    }
+    font-size: 24px;
+}
 
 #cars {
-        width: 900px;
-    }
+    width: 900px;
+}
+
+.social {
+    background-color: #8FD5A6;
+    color: #ffffff; 
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
 .footer {
-        align-content: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+    color: #ffffff;
+    background-color: #065143;
+    align-content: center;
+    text-align: center;
+}
