@@ -3,7 +3,7 @@ body {
 }
 
 .bg-light {
-    background-color: #065143 !important;
+    background-color: #FDFDFD!important;
 }
 
 .nav-item {
@@ -11,16 +11,16 @@ body {
 }
 
 .nav-link {
-    color: #ffffff;
+    color: #4B4B4B
 }
 
 .nav-link:hover {
-    color: #8FD5A6;
+    color: #FEF43D;
 }
 
 .section-one {
-    background-image: url("../images/background.png");
-    height: 300px;
+    background-image: url("../images/nissan.jpg");
+    height: 549px;
     background-repeat: no-repeat;
     /* background-repeat: no-repeat; */
 }
@@ -31,12 +31,18 @@ body {
 
 h1 {
     color: white;
+    font-family: 'Noto Serif', serif;
+    font-size: 85px;
+    color: #4B4B4B;
+    text-shadow: -1px 0 #C9C9C9, 0 1px #C9C9C9, 1px 0 #C9C9C9, 0 -1px #C9C9C9;
 }
+
 
 p,
 ul,
 h6 {
     font-family: 'Crimson Text', serif;
+    color: #4B4B4B;
 }
 
 ul {
@@ -81,42 +87,48 @@ h6 {
 
 .card {
     margin-bottom: 10px;
+    width: 22rem!important;
+    color: #4B4B4B;
+    width: 800px;
+    margin: 50px auto 0;
+    padding: 60px 30px;
+    border: 1px solid #4B4B4B;
 }
 
-.justify-content-center {
-    margin-right: 45px;
+.calculator-card {
+    width: 42em!important;
+    background-color: #4B4B4B;
+    color: #FEF43D;
 }
 
+.card-title {
+    color: #2575B2;
+}
 
 .social {
-    background-color: #8FD5A6;
-    color: #ffffff;
+    background-color: #2575B2;
+    color: #FDFDFD;
     font-weight: bold;
     margin-top: 10px;
 }
 
-i {
+.social i {
     margin-left: 15px;
 }
 
 
 .footer {
-    color: #ffffff;
-    background-color: #065143;
+    color: #4B4B4B;
+    background-color: #FDFDFD;
     align-content: center;
     text-align: center;
 }
 
-.card {
-    width: 800px;
-    margin: 50px auto 0;
-    padding: 60px 30px;
-    border: 1px solid #000;
-}
 
 .wrapper__title {
     text-transform: capitalize;
     margin: 0 0 40px;
+    color: #FEF43D;
 }
 
 .calculator__row {
@@ -149,13 +161,25 @@ i {
 }
 
 h2 {
-    color:black;
+    color: black;
 }
 
 .L2_charger {
     padding-top: 5px;
 }
 
+.l2_title {
+    color: #C9C9C9;
+}
+
 .L3_charger {
     padding-top: 5px;
+}
+
+.l3_title {
+    color: #C9C9C9;
+}
+
+.bg-success {
+    background-color: #2575B2!important;
 }
