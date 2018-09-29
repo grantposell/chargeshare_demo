@@ -5,22 +5,36 @@ $(document).ready( function () {
 
 	var amount, percent, result;
 	var calculator = $('.calculator');
-	var calculatorBill = calculator.find('.calculator__funding');
+	var calculatorProfit = calculator.find('.calculator__funding');
 	var calculatorTip = calculator.find('.calculator__tip');
 	var calculatorResult = calculator.find('.calculator__result');
-	var tipAmount = calculator.find('.tip-amount');
+	var L2Amount = calculator.find('.tip-amount');
 
 
-	// INIT BILL
+	// INIT Profit/Percentage
 	// ----------------------------------------------------------
 
+	// Calculates percentage of L2 charger and write them to the DOM
 	$(window).on('DOMContentLoaded', function () {
-			tipAmount.text( calculatorTip.val() + '%' );
-			amount = calculatorBill.val() * 1;
+			L2Amount.text( calculatorTip.val() + '%' );
+
+
+			amount = calculatorProfit.val() * 1;
 			percent = calculatorTip.val() * 1;
 			result = amount + amount * ( percent / 100 );
 			calculatorResult.text( result.toFixed(2) + '$' );
 	});
+
+	// Calculates percentage of L3 charger and write them to the DOM
+	$(window).on('DOMContentLoaded', function () {
+		L3Amount.text( calculatorTip.val() + '%' );
+
+
+		amount = calculatorProfit.val() * 1;
+		percent = calculatorTip.val() * 1;
+		result = amount + amount * ( percent / 100 );
+		calculatorResult.text( result.toFixed(2) + '$' );
+});
 
 
 	// RANGE FUNCTION
