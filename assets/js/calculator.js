@@ -36,7 +36,7 @@ $(document).ready(function () {
 		l2Percentage.innerHTML = (percent + "%");
 		l3Percentage.innerHTML = (percent2 + "%");
 		
-		("l2_text").show();
+		// ("l2_text").show();
 
 	});
 
