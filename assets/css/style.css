@@ -20,21 +20,32 @@ body {
 
 .section-one {
     background-image: url("../images/nissan.jpg");
-    height: 549px;
+    height: 550px;
     background-repeat: no-repeat;
-    /* background-repeat: no-repeat; */
+}
+
+.section-two {
+    background-image: url("../images/car.jpg");
+    height: 780px;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
 }
 
 #map {
     height: 500px;
 }
 
-h1 {
+#typed1 {
     color: white;
     font-family: 'Noto Serif', serif;
     font-size: 85px;
     color: #4B4B4B;
     text-shadow: -1px 0 #C9C9C9, 0 1px #C9C9C9, 1px 0 #C9C9C9, 0 -1px #C9C9C9;
+    padding-top: 2em;
+}
+
+.network-header, .invest-header {
+    text-align: center
 }
 
 h6 {
@@ -56,13 +67,20 @@ ul {
 
 }
 
-.contact-header {
-    margin-bottom: 40px;
+.col-md-2 { 
+    color: #4B4B4B;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .contact-one,
 .contact-two {
     text-align: center;
+}
+
+.contact-two {
+    margin-bottom: 30px;
 }
 
 h5 {
@@ -75,6 +93,9 @@ h6 {
 
 .about-section {
     text-align: center;
+}
+.summary {
+    padding-left: 6rem;
 }
 
 .about-paragraph {
@@ -100,13 +121,17 @@ h6 {
 }
 
 .calculator-card {
-    width: 42em !important;
+    width: 30em !important;
     background-color: #4B4B4B;
     color: #FEF43D;
 }
 
 .card-title {
     color: #2575B2;
+}
+
+.invest {
+    padding-top: 30px;
 }
 
 .social {
@@ -125,11 +150,11 @@ h6 {
 }
 
 .social-container {
-    width: 100%;
+    width: 20%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 645px;
     background-color: #2575B2;
 }
 
@@ -147,9 +172,16 @@ footer {
 }
 
 .p-2 {
-    padding: 0.5rem 9rem .5rem 9rem!important;
+    padding: .5em 0px !important;
 }
 
+.subscribe {
+    padding: 0px 165px 0px 330px !important;
+}
+
+.contact-footer {
+    padding: 0px 0px 0px 85px !important;
+}
 
 .wrapper__title {
     text-transform: capitalize;
@@ -211,15 +243,23 @@ h2 {
 }
 
 #mc_embed_signup {
-    background: #4B4B4B;
+    /* background: #4B4B4B; */
     clear: left;
     font: 20px 'Crimson Text', serif;
     border-radius: .25em;
-    color: #FDFDFD;
+    color: #4B4B4B;
     height: 10rem;
     width: 18rem;
     padding-left: 20px;
     margin-top: 10px;
+}
+
+#mce-EMAIL {
+    width: 140px;
+}
+
+#mc-embedded-subscribe {
+    vertical-align: baseline;
 }
 
 .btn-secondary {
@@ -228,5 +268,5 @@ h2 {
     font-weight: bold;
     font-size: 16px;
     border-radius: .25rem;
-    border: #FDFDFD solid 1px; 
+    border: #FDFDFD solid 1px;
 }
