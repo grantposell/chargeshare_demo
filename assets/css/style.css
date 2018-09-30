@@ -3,7 +3,7 @@ body {
 }
 
 .bg-light {
-    background-color: #FDFDFD!important;
+    background-color: #FDFDFD !important;
 }
 
 .nav-item {
@@ -37,10 +37,14 @@ h1 {
     text-shadow: -1px 0 #C9C9C9, 0 1px #C9C9C9, 1px 0 #C9C9C9, 0 -1px #C9C9C9;
 }
 
+h6 {
+    font-family: 'Crimson Text', serif;
+    color: #2575B2;
+}
+
 
 p,
-ul,
-h6 {
+ul {
     font-family: 'Crimson Text', serif;
     color: #4B4B4B;
 }
@@ -87,7 +91,7 @@ h6 {
 
 .card {
     margin-bottom: 10px;
-    width: 22rem!important;
+    width: 22rem !important;
     color: #4B4B4B;
     width: 800px;
     margin: 50px auto 0;
@@ -96,7 +100,7 @@ h6 {
 }
 
 .calculator-card {
-    width: 42em!important;
+    width: 42em !important;
     background-color: #4B4B4B;
     color: #FEF43D;
 }
@@ -112,16 +116,38 @@ h6 {
     margin-top: 10px;
 }
 
-.social i {
-    margin-left: 15px;
+.social {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.social-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #2575B2;
 }
 
 
-.footer {
-    color: #4B4B4B;
-    background-color: #FDFDFD;
-    align-content: center;
-    text-align: center;
+footer {
+    background-color: #C9C9C9;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.footer-bottom {
+    background-color: #2575B2;
+    min-height: 50px;
+    padding: 10px 0;
+}
+
+.p-2 {
+    padding: 0.5rem 9rem .5rem 9rem!important;
 }
 
 
@@ -181,5 +207,26 @@ h2 {
 }
 
 .bg-success {
-    background-color: #2575B2!important;
+    background-color: #2575B2 !important;
+}
+
+#mc_embed_signup {
+    background: #4B4B4B;
+    clear: left;
+    font: 20px 'Crimson Text', serif;
+    border-radius: .25em;
+    color: #FDFDFD;
+    height: 10rem;
+    width: 18rem;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.btn-secondary {
+    background-color: #2575B2;
+    color: #FDFDFD;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: .25rem;
+    border: #FDFDFD solid 1px; 
 }
