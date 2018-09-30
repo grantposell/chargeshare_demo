@@ -20,6 +20,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/calculator.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Mukta+Malar|Noto+Serif|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
@@ -58,7 +59,7 @@
             <form class="calculator">
                 <div class="calculator__row">
                     <label for="funding">enter funding amount: $</label>
-                    <input type="text" id="funding" class="calculator__funing" placeholder="Enter Amount" required/>
+                    <input type="text" id="funding" class="calculator__funding" placeholder="Enter Amount" required/>
                 </div>
                 <!-- <div class="calculator__row">
                     <label for="tip">tip amount:
@@ -76,16 +77,33 @@
                 <h6 class="l2_title">Level 2 Charger</h6>
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                        aria-valuemax="100" style="width:'l2_percentage_result'"></div>
+                        aria-valuemax="100" style="width:0%"></div>
                 </div>
+            </div>
+            <div class="l2_text">
+                <ul>
+                    <li>Break Even:</li>
+                    <li>5 Year return:</li>
+                </ul>
             </div>
             <div class="L3_charger">
                 <h6 class="l3_title">Level 3 Charger</h6>
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                        aria-valuemax="100" style="width:'l3_percentage_result'"></div>
+                        aria-valuemax="100" style="width:0%"></div>
                 </div>
             </div>
+            <div class="l3_text">
+                <ul>
+                    <li>Break Even:</li>
+                    <li>5 Year return:</li>
+                </ul>
+            </div>
+            <div class="calculator__button">
+                <button id="calculate" class="btn btn-sm btn-primary" type="submit" value="calculate">Calculate</button>
+                <!-- <button id="clear" class="btn btn-sm btn-success" type="reset" value="clear">Clear</button> -->
+            </div>
+    </div>
     </div>
 
 
