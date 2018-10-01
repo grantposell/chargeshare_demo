@@ -8,7 +8,7 @@ $(document).ready(function () {
 	var l2Percentage = document.getElementsByClassName('progress-bar')[0];
 	var l3Percentage = document.getElementsByClassName('progress-bar')[1];
 	var l2Charger = 6500;
-	var l3Charger = 70000;
+	var l3Charger = 17500;
 	
 	// INIT Profit/Percentage
 	// ----------------------------------------------------------
