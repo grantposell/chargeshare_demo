@@ -3,6 +3,21 @@
     width: 42em!important;
     background-color: #4B4B4B;
     color: #FEF43D;
+    /* float: left; */
+}
+
+.info-card {
+    width: 42em!important;
+    padding-bottom: 15px;
+    border: none;
+}
+
+.l2_text{
+    color: #C9C9C9;
+}
+
+.l3_text{
+    color: #C9C9C9;
 }
 
 .calculator__row {
@@ -51,10 +66,10 @@
     padding-top: 5px;
 }
 
-.l2_text{
-    color: white;
+.invest-title{
+    padding-left: 40px;
 }
 
-.l3_text{
-    color: white;
+.col-md-6{
+    padding-bottom: 50px;
 }
