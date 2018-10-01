@@ -26,7 +26,7 @@ body {
 
 .section-two {
     background-image: url("../images/car.jpg");
-    height: 780px;
+    height: 530px;
     background-repeat: no-repeat;
     margin-bottom: 15px;
 }
@@ -38,7 +38,7 @@ body {
 #typed1 {
     color: white;
     font-family: 'Noto Serif', serif;
-    font-size: 85px;
+    font-size: 65px;
     color: #4B4B4B;
     text-shadow: -1px 0 #C9C9C9, 0 1px #C9C9C9, 1px 0 #C9C9C9, 0 -1px #C9C9C9;
     padding-top: 2em;
@@ -60,16 +60,9 @@ ul {
     color: #4B4B4B;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-}
-
 .col-md-2 { 
     color: #4B4B4B;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -131,7 +124,7 @@ h6 {
 }
 
 .invest {
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .social {
@@ -139,9 +132,6 @@ h6 {
     color: #FDFDFD;
     font-weight: bold;
     margin-top: 10px;
-}
-
-.social {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -149,13 +139,13 @@ h6 {
     margin-left: auto;
 }
 
-.social-container {
-    width: 20%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: 645px;
-    background-color: #2575B2;
+.col-md-9 {
+    text-align: center;
+}
+
+.box {
+    border-radius: .25rem;
+    border: #4B4B4B solid 1px!important;
 }
 
 
