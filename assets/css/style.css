@@ -2,14 +2,14 @@ body {
     overflow: scroll;
 }
 
-.bg-light {
+.bg-light { 
     background-color: #065143 !important;
-}
 
+}
 .nav-item {
     font-family: 'Source Sans Pro', sans-serif;
+    
 }
-
 .nav-link {
     color: #ffffff;
 }
