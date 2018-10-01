@@ -1,0 +1,60 @@
+
+.calculator-card {
+    width: 42em!important;
+    background-color: #4B4B4B;
+    color: #FEF43D;
+}
+
+.calculator__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 30px;
+}
+
+.calculator__row:last-child {
+    margin-bottom: 0;
+}
+
+.calculator__row label {
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.calculator__bill {
+    width: 50%;
+}
+
+.calculator__tip {
+    width: 60%;
+}
+
+.calculator__info {
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.bg-success {
+    background-color: #2575B2!important;
+}
+
+#calculate{
+    width: 20%;
+    float: right;
+}
+
+#clear{
+    width: 20%;
+}
+
+.calculator__button{
+    padding-top: 5px;
+}
+
+.l2_text{
+    color: white;
+}
+
+.l3_text{
+    color: white;
+}
