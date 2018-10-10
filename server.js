@@ -10,8 +10,8 @@ var env = require('dotenv').load()
 require('./config/passport.js');;
 
 var app = express();
-var PORT = process.env.PORT || 3000;
-var db = require("./models");
+var PORT = process.env.PORT || 8080;
+var db = require("./models/User");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -25,8 +25,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Requiring our routes
-require("./routes/html-routes.js")(app);
-require("./routes/api-routes.js")(app);
+// require("./routes/html-routes.js")(app);
+// require("./routes/api-routes.js")(app);
 
 
 //this functionality is in config

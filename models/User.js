@@ -3,7 +3,7 @@
 var Sequelize = require('sequelize');
 var bcrypt = require("bcrypt-nodejs");
 // Creating our User model
-module.exports = function (sequelize, DataTypes) {
+module.exports = function(sequelize, DataTypes) {
     var User = sequelize.define("User", {
         // Giving the User model a name of type STRING
         firstName: {
