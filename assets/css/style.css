@@ -17,10 +17,19 @@ body {
     color: #FEF43D;
 }
 
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .section-one {
-    background-image: url("../images/nissan.jpg");
+    /* background-image: url("../images/nissan.jpg"); */
     height: 550px;
     background-repeat: no-repeat;
+}
+
+img {
+    object-fit: contain;
 }
 
 .section-two {
@@ -152,6 +161,8 @@ footer {
     background-color: #2575B2;
     min-height: 50px;
     padding: 10px 0;
+    border-style: inset;git 
+    border: 5px solid #2575B2;
 }
 
 .p-2 {
@@ -223,4 +234,8 @@ h2 {
     font-size: 16px;
     border-radius: .25rem;
     border: #FDFDFD solid 1px;
+}
+
+.bold {
+    font-weight: bold
 }
