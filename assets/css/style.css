@@ -24,7 +24,7 @@ body {
 
 .section-one {
     /* background-image: url("../images/nissan.jpg"); */
-    height: 550px;
+    height: 850px;
     background-repeat: no-repeat;
 }
 
@@ -161,7 +161,7 @@ footer {
     background-color: #2575B2;
     min-height: 50px;
     padding: 10px 0;
-    border-style: inset;git 
+    border-style: inset; 
     border: 5px solid #2575B2;
 }
 
