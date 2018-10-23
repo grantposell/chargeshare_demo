@@ -1,20 +1,30 @@
+/*
+COLORS
+BLUE: #174076
+BLOOD ORAANGE: #F9400F
+LIGHT ORANGE: #F4611E
+YELLOW: #F5A745
+PEARL: #EDE7CA
+*/
+
 body {
     overflow: scroll;
+    background-color: #ede7ca;
 }
 
 .bg-light {
-    background-color: #FDFDFD !important;
+    background-color: #fdfdfd00 !important;
 }
 .nav-item {
     font-family: 'Source Sans Pro', sans-serif;
     
 }
-.nav-link {
-    color: #4B4B4B
+a {
+    color: #F9400F;
 }
 
 .nav-link:hover {
-    color: #FEF43D;
+    color: white;
 }
 
 .container-fluid {
@@ -22,15 +32,15 @@ body {
     padding-right: 0px;
 }
 
-.section-one {
-    /* background-image: url("../images/nissan.jpg"); */
+/* .section-one {
+    background-image: url("../images/nissan.jpg");
     height: 850px;
     background-repeat: no-repeat;
-}
-
+} */
+/* 
 img {
     object-fit: contain;
-}
+} */
 
 .section-two {
     background-image: url("../images/car.jpg");
@@ -38,6 +48,7 @@ img {
     background-repeat: no-repeat;
     margin-bottom: 15px;
 }
+
 
 #map {
     height: 500px;
@@ -58,7 +69,7 @@ img {
 
 h6 {
     font-family: 'Crimson Text', serif;
-    color: #2575B2;
+    color: #174076;
 }
 
 
@@ -66,7 +77,12 @@ p,
 ul {
     font-family: 'Crimson Text', serif;
     color: #4B4B4B;
+    list-style: none;
 }
+
+/* li {
+    list-style: none;
+} */
 
 .col-md-2 { 
     color: #4B4B4B;
@@ -125,12 +141,12 @@ h6 {
     color: #2575B2;
 }
 
-.invest {
-    /* padding-top: 50px; */
-}
+/* .invest {
+    padding-top: 50px;
+} */
 
 .social {
-    background-color: #2575B2;
+    /* background-color: #2575B2; */
     color: #FDFDFD;
     font-weight: bold;
     margin-top: 10px;
@@ -152,18 +168,11 @@ h6 {
 
 
 footer {
-    background-color: #C9C9C9;
+    background-color: #174076;
     font-size: 1rem;
     width: 100%;
 }
 
-.footer-bottom {
-    background-color: #2575B2;
-    min-height: 50px;
-    padding: 10px 0;
-    border-style: inset; 
-    border: 5px solid #2575B2;
-}
 
 .p-2 {
     padding: .5em 0px !important;
@@ -173,9 +182,6 @@ footer {
     padding: 0px 165px 0px 330px !important;
 }
 
-.contact-footer {
-    padding: 0px 0px 0px 85px !important;
-}
 
 .wrapper__title {
     text-transform: capitalize;
@@ -213,7 +219,6 @@ h2 {
     font: 20px 'Crimson Text', serif;
     border-radius: .25em;
     color: #4B4B4B;
-    height: 10rem;
     width: 18rem;
     padding-left: 20px;
     margin-top: 10px;
@@ -238,4 +243,9 @@ h2 {
 
 .bold {
     font-weight: bold
+}
+
+#adapters {
+    width: 60%;
+    height: 40%;
 }
