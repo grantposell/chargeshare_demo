@@ -9,7 +9,6 @@ PEARL: #EDE7CA
 
 body {
     overflow: scroll;
-    background-color: #ede7ca;
 }
 
 .bg-light {
@@ -112,7 +111,7 @@ h6 {
     text-align: center;
 }
 .summary {
-    padding-left: 6rem;
+    width: 80%;
 }
 
 .about-paragraph {
@@ -168,7 +167,7 @@ h6 {
 
 
 footer {
-    background-color: #174076;
+    background-color: #B6D6CC;
     font-size: 1rem;
     width: 100%;
 }
