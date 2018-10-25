@@ -32,7 +32,7 @@
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="./index.html">ChargeShare</a>
 
-        <ul class="nav justify-content-end">
+        <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link active" href="./index.html">Home</a>
             </li>
@@ -42,27 +42,22 @@
             <li class="nav-item">
                 <a class="nav-link" href="./network.html">Network</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./pricing.html">Pricing</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./invest.html">Invest</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link " href="./pricing.html" id="navbarDropdownMenuLink" aria-haspopup="true"
+                    aria-expanded="false">Pricing</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="./invest.html">Invest</a>
+                </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false" href="./about.html">
+                <a class="nav-link" href="./about.html" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">
                     About Us
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./about.html">About Us</a>
-
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="./faq.html">FAQ</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="./contact.html">Contact Us</a>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Register/Login</a>
