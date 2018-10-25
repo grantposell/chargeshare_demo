@@ -34,8 +34,7 @@ a {
 /* .section-one {
     background-image: url("../images/nissan.jpg");
     height: 850px;
-    background-repeat: no-repeat;
-} */
+
 /* 
 img {
     object-fit: contain;
@@ -50,7 +49,49 @@ img {
 
 
 #map {
-    height: 500px;
+    height: 600px;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #FFFFFF;
+    border-color: #999 #999 #999 #999;
+}
+
+#legend {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: 1px dashed #000;
+    text-align: left;
+}
+
+.PlanYear {
+    background-color: white; 
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    border: 2px solid #4CAF50;
+    border-radius: .3em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.PlanYear:hover {
+    background-color: palegreen;
+    border-color: green;
+    color: white;
+}
+
+.PlanYear.active {
+    border-color: green;
+    background-color: #4CAF50;
 }
 
 #typed1 {
