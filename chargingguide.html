@@ -22,65 +22,82 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="./index.html">ChargeShare</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="./">ChargeShare</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link active" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./electric.html">Going Electric</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./network.html">Network</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./invest.html">Invest</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-            <!-- <li class="nav-item">
-                            <a class="nav-link" href="#">Register/Login</a>
-                        </li> -->
-        </ul>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./electric">Going Electric</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./network">Network</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="./pricing" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">Pricing</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="./pricing#invest">Invest</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="./about" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                        About Us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="./faq">FAQ</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./contact">Contact Us</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./signup">Register/Login</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <h1>Car Charging Guide</h1>
     <p>
-            Step 1: what make of car do you drive? <select>
-                    <option value="select">Select Make</option>
-                    <option value="audi">Audi</option>
-                    <option value="bmw">BMW</option>
-                    <option value="bollinger">Bollinger</option>
-                    <option value="bmw">Chrysler</option>
-                    <option value="ford">Ford</option>
-                    <option value="honda">Hyundai</option>
-                    <option value="kia">Kia</option>
-                    <option value="lexus">Lexus</option>
-                    <option value="lucid">Lucid</option>
-                    <option value="mercedes-benz">Mercedes-Benz</option>
-                    <option value="nissan">Nissan</option>
-                    <option value="tesla">Tesla</option>
-                    <option value="toyota">Toyota</option>
-                    <option value="volvo">Volvo</option>
-                    <option value="volkswagen">Volkswagen</option>
-                  </select><br/>
-            <br/>
-            
-            Step 2: Your car has a ______ plug.<br/>
-            Show image<br/>
-            Step 3: Open charge port in front/back and look for above image. Plug into port. <br/>
-            Step 4: Select on the screen: ________<br/>
-            Step 5: Use a credit or debit card to pay <br/>
-            Or <br/>
-            Use membership card if applicable.<br/>
-            <br/>
-            
-            For more support, go to the <a href="./contact.html">Contact</a> page<br/>
-            <br/>
-            Happy Charging!<br/>
-            
+        Step 1: what make of car do you drive?
+        <select>
+            <option value="select">Select Make</option>
+            <option value="audi">Audi</option>
+            <option value="bmw">BMW</option>
+            <option value="bollinger">Bollinger</option>
+            <option value="bmw">Chrysler</option>
+            <option value="ford">Ford</option>
+            <option value="honda">Hyundai</option>
+            <option value="kia">Kia</option>
+            <option value="lexus">Lexus</option>
+            <option value="lucid">Lucid</option>
+            <option value="mercedes-benz">Mercedes-Benz</option>
+            <option value="nissan">Nissan</option>
+            <option value="tesla">Tesla</option>
+            <option value="toyota">Toyota</option>
+            <option value="volvo">Volvo</option>
+            <option value="volkswagen">Volkswagen</option>
+        </select>
+        <br/>
+        <br/> Step 2: Your car has a ______ plug.
+        <br/> Show image
+        <br/> Step 3: Open charge port in front/back and look for above image. Plug into port.
+        <br/> Step 4: Select on the screen: ________
+        <br/> Step 5: Use a credit or debit card to pay
+        <br/> Or
+        <br/> Use membership card if applicable.
+        <br/>
+        <br/> For more support, go to the
+        <a href="./contact.html">Contact</a> page
+        <br/>
+        <br/> Happy Charging!
+        <br/>
+
     </p>
 
 
@@ -136,21 +153,18 @@
                                     <!-- Begin Mailchimp Signup Form -->
                                     <div id="mc_embed_signup">
                                         <form action="https://chargesharenetwork.us19.list-manage.com/subscribe/post?u=fc887adcd52355cd6bb164eff&amp;id=a6143a407d"
-                                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                                            class="validate" target="_blank" novalidate>
+                                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                                            target="_blank" novalidate>
                                             <div id="mc_embed_signup_scroll">
                                                 <label for="mce-EMAIL">Subscribe to our mailing list</label>
                                                 <br>
-                                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
-                                                    placeholder="email address" required>
-                                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
-                                                    class="btn btn-secondary">
+                                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary">
                                                 <br>
                                                 <br>
                                                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                                 <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                                    <input type="text" name="b_fc887adcd52355cd6bb164eff_a6143a407d"
-                                                        tabindex="-1" value="">
+                                                    <input type="text" name="b_fc887adcd52355cd6bb164eff_a6143a407d" tabindex="-1" value="">
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
