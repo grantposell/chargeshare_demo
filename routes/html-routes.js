@@ -1,69 +1,31 @@
-// var path = require("path");
-// // var authRoute = require('./auth.js');
-// // Requiring our custom middleware for checking if a user is logged in
+// Requiring path to so we can use relative routes to our HTML files
+var path = require("path");
+
+// Requiring our custom middleware for checking if a user is logged in
 // var isAuthenticated = require("../config/middleware/isAuthenticated");
-// //var authController = require('../controllers/authcontroller.js');
-// //var passport = require('passport');
-// module.exports = function (app) {
 
-//     app.get("/", function (req, res) {
-//         if (req.user) {
-//             res.redirect("/");
-//           }
-//         var hbsObj = {
-//             title: "LogIn",
-//             bodyClass: "signInBody"
-//         }
-//         res.render("login", hbsObj)
-//     });
-//     //added route for login buttons
-//     app.get("/login", function (req, res) {
-//         var hbsObj = {
-//             title: "LogIn"
-//         }
-//         res.render("login", hbsObj)
-//     });
+module.exports = function(app) {
 
+  app.get("/", function(req, res) {
+    // If the user already has an account send them to the landing page
+    // if (req.user) {
+    //   res.redirect("/");
+    // }
+    // res.sendFile(path.join(__dirname, "../signup.html"));
+  });
 
-//     //app.get('/signup', authController.signup);
+  // app.get("/login", function(req, res) {
+  //   // If the user already has an account send them to the landing page
+  //   if (req.user) {
+  //     res.redirect("/");
+  //   }
+  //   res.sendFile(path.join(__dirname, "../login.html"));
+  // });
 
-//     app.get("/signup", function (req, res) {
-//         var hbsObj = {
-//             title: "signup",
-//             bodyClass: "blue"
-//         }
-//         res.render("signup", hbsObj)
-//     });
-//     //after signing up or in, direct to myPlants
-//     //logo takes user to myPlants
+  // Here we've add our isAuthenticated middleware to this route.
+  // If a user who is not logged in tries to access this route they will be redirected to the signup page
+  // app.get("/signup", isAuthenticated, function(req, res) {
+  //   res.sendFile(path.join(__dirname, "../invest.html"));
+  // });
 
-//     //ChargeShare = home page
-//     app.get("/index", isAuthenticated, function (req, res) {
-//         var hbsObj = {
-//             title: "ChargeShare",
-//             bodyClass: ""
-//         }
-//         res.render("", hbsObj)
-//     });
-
-//     app.get("/invest", isAuthenticated, function (req, res) {
-//         var hbsObj = {
-//             title: "Add funds",
-//             bodyClass: "...."
-//         }
-//         res.render("", hbsObj)
-//     });
-
-//     app.get("/about", function (req, res) {
-//         var hbsObj = {
-//             title: "About Charge Share"
-//         }
-//         res.render("about", hbsObj)
-//     });
-
-
-
-   
-// };
-
-
+};
