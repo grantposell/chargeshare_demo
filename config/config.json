@@ -2,7 +2,7 @@
     "development": {
       "username": "root",
       "password": "password",
-      "database": "chargeShare_db",
+      "database": "chargeshare_db",
       "host": "127.0.0.1",
       "dialect": "mysql"
     },
@@ -14,7 +14,10 @@
       "dialect": "mysql"
     },
     "production": {
-      "use_env_variable": "",
+      "username": "root",
+      "password": null,
+      "database": "database_production",
+      "host": "127.0.0.1",
       "dialect": "mysql"
     }
   }
