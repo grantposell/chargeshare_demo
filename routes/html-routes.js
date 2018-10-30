@@ -30,12 +30,17 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../contact.html"));
   });
 
+  app.get("/about", function(req, res) {
+    res.sendFile(path.join(__dirname, "../about.html"));
+  });
+
+
   app.get("/faq", function(req, res) {
     res.sendFile(path.join(__dirname, "../faq.html"));
   });
 
   app.get("/invest", function(req, res) {
-    res.sendFile(path.join(__dirname, "../invest.html"));
+    res.sendFile(path.join(__dirname, "../pricing#invest.html"));
   });
 
   app.get("/pricing", function(req, res) {

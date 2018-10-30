@@ -3,13 +3,14 @@
     width: 35em!important;
     background-color: #4B4B4B;
     color: #FEF43D;
-    /* float: left; */
+    padding: 5% 10%;
 }
 
 .info-card {
     width: 42em!important;
     padding-bottom: 15px;
     border: none;
+    padding: 2% 10%;
 }
 
 .l2_text{
