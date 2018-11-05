@@ -47,6 +47,10 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../pricing.html"));
   });
 
+  app.get("/dashboard", function(req, res) {
+    res.sendFile(path.join(__dirname, "../dashboard.html"));
+  });
+
   app.get("/signup", function(req, res) {
     // If the user already has an account send them to the landing page
     if (req.user) {
