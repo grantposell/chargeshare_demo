@@ -232,6 +232,10 @@ footer {
 
 #mce-EMAIL {
     width: 140px;
+    border: groove #2575B2 1px;
+    border-radius: .25rem;
+    font-size: 16px;
+    height: 2.25em;
 }
 
 #mc-embedded-subscribe {
