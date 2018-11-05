@@ -34,9 +34,9 @@ ul.navbar-nav li.dropdown:hover div.dropdown-menu {
 }
 
 .section-two {
-    background-image: url("../images/car.jpg");
+    /* background-image: url("../images/car.jpg");
     height: 530px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     margin-bottom: 15px;
 }
 
