@@ -1,0 +1,32 @@
+.row { 
+    margin-top: 5%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#tranquil {
+    width: 100%;
+    position: relative;
+}
+
+#yoga {
+    width: inherit;
+}
+
+#adapters {
+    width: inherit;
+}
+
+.caption {
+    position: absolute;
+    top: 60%;
+    left: auto;
+    width: auto;
+    color: white;
+    font-size: 65px;
+}
+
+.bold {
+    font-weight: bold
+}
+
