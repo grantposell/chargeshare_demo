@@ -41,6 +41,10 @@ ul.navbar-nav li.dropdown:hover div.dropdown-menu {
     margin-bottom: 15px;
 }
 
+.stores {
+    width: inherit;
+}
+
 h2 {
     color: black;
 }
