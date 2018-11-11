@@ -13,13 +13,8 @@
     <title>ChargeShare - Going Electric</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/electric.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Mukta+Malar|Noto+Serif|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
@@ -30,16 +25,13 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <a class="navbar-brand" href="./">ChargeShare</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="./">Home</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./electric">Going Electric</a>
                 </li>
@@ -47,8 +39,12 @@
                     <a class="nav-link" href="./network">Network</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link " href="./pricing" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">Pricing</a>
+                    <a class="nav-link " href="./pricing" id="navbarDropdownMenuLink" aria-haspopup="true"
+                        aria-expanded="false">Pricing</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="./pricing#location">Location Pricing</a>
+                        <a class="dropdown-item" href="./pricing#contribute">Contribute</a>
+                        <a class="dropdown-item" href="./pricing#partner">Partner</a>
                         <a class="dropdown-item" href="./pricing#invest">Invest</a>
                     </div>
                 </li>
@@ -69,156 +65,183 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row justify-content-center contact-header">
-            <h2>Going Electric</h2>
-        </div>
-
-        <div class="row justify-content-center">
-            Thinking green isn’t just a hippie’s idea of the future anymore. Getting an electric vehicle and adopting sustainable living
-            is becoming a reality through our expansion of a charging network that will allow you to travel wherever you
-            want to go. Buying a new vehicle is difficult, especially when you’re buying a new type of vehicle. We want to
-            relieve you of any stress you may have. Below is our quick and easy course on transitioning to electric. Every
-            electric vehicle can be charged using a variety of methods.
-            <ol>
-                <li>
-                    Electric cars come with a charger for a standard outlet found in your home. The end that plugs into the vehicle is called
-                    an SAE J1772 connector and this is found in every electric vehicle regardless of manufacturer. Using
-                    the standard at home outlet, this will draw 5 miles of charge an hour. This common speed is known as
-                    level 1 charging and is considered the slowest standard in charging. Most people will opt for the next
-                    method for at home and local charging as it charges faster.
-                </li>
-                <li>
-                    Level 2 charging uses the standard SAE J1772 connector from the previous explanation but the charger plugs into a 220volt
-                    and higher outlet. This outlet can vary depending on situation but this can be done using a standard
-                    washer outlet. Many home owners who don’t have these outlets in their garage will require a certified
-                    electrician to create this setup. Alternatively, many use public charging level 2 chargers at participating
-                    grocery stores, shopping centers and malls. These supply about 20-25 miles per hour of charge. ChargeShare
-                    will use these to supplement our nationwide deployment of fast chargers.
-                </li>
-                <li>
-                    Finally, the moment you’ve been waiting for. Fast Chargers using level 3 and up can charger a vehicle from empty to full
-                    in a slow as 1 hour to as fast as 10 minutes depending on electrical grid and kilowatt hours your car
-                    can accept with its onboard charger.
-                </li>
-            </ol>
-        </div>
-
-        <div class="row justify-content-center">
-            <img src="./assets/images/adapters.jpg" id="adapters">
-        </div>
-
-        <div class="row justify-content-center">
-            <p class="bold">Disclaimer:</p> Your vehicle needs to be equipped with fast charging capabilities to take advantage of the infrastructure.
-            ChargeShare’s chargers will vary in quickness and efficiency depending on fast charger selected and local infrastructure.
-            Our chargers are planned to be deployed across the USA and will cater to all cars. This includes ChadeMo, CCS,
-            and adaptors for Tesla vehicles.
-
+            <img src="./assets/images/tranquil.png" id="tranquil">
+            <div class="caption">
+                Going Electric
+            </div>
         </div>
 
 
     </div>
 
-    <footer class="footer">
-        <div class="container row">
-            <div class="col-sm-2">
-
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="./assets/images/yoga.jpg" id="yoga">
             </div>
-            <div class="col-sm-2">
 
-            </div>
-            <header class="col-sm-2">
-                <a class="footer_logo" href="/">
-                    <span class="ui_logo"></span>ChargeShare
-                </a>
-            </header>
-            <div class="col-sm-2">
+            <div class="col-sm-6">
+                <p> Thinking green isn’t just a hippie’s idea of the future anymore. Getting an electric vehicle and
+                    adopting
+                    sustainable living
+                    is becoming a reality through our expansion of a charging network that will allow you to travel
+                    wherever
+                    you
+                    want to go. Buying a new vehicle is difficult, especially when you’re buying a new type of vehicle.
+                    We
+                    want
+                    to
+                    relieve you of any stress you may have. Below is our quick and easy course on transitioning to
+                    electric.
+                    Every
+                    electric vehicle can be charged using a variety of methods.</p>
 
-            </div>
-            <div class="social col-sm-4">
-                <a href="#" class="ui_twitter" title="Twitter" target="_blank">
-                    <span style="font-size: 30px">
-                        <i class="fab fa-twitter-square"></i>
-                    </span>
-                </a>
-                <a href="#" class="ui_facebook" title="Facebook" target="_blank">
-                    <span style="font-size: 30px">
-                        <i class="fab fa-facebook"></i>
-                    </span>
-                </a>
-                <a href="#" class="ui_instagram" title="Instagram" target="_blank">
-                    <span style="font-size: 30px">
-                        <i class="fab fa-instagram"></i>
-                    </span>
-                </a>
-                <a href="#" class="ui_dribbble" title="Noun Project Dribble" target="_blank">
-                    <span style="font-size: 30px">
-                        <i class="fab fa-linkedin"></i>
-                    </span>
-                </a>
+                <ol>
+                    <li>
+                        <p>Electric cars come with a charger for a standard outlet found in your home. The end that
+                            plugs
+                            into
+                            the vehicle is called
+                            an SAE J1772 connector and this is found in every electric vehicle regardless of
+                            manufacturer.
+                            Using
+                            the standard at home outlet, this will draw 5 miles of charge an hour. This common speed is
+                            known
+                            as
+                            level 1 charging and is considered the slowest standard in charging. Most people will opt
+                            for
+                            the
+                            next
+                            method for at home and local charging as it charges faster.</p>
+                    </li>
+                </ol>
+
             </div>
         </div>
 
-        <div class="container row">
-            <div class="col-sm-4">
-
-            </div>
-            <ul class="col-sm-2">
-                <h6>ChargeShare</h6>
-                <li>
-                    <a href="/electric" title="Going Electric">Going Electric</a>
-                </li>
-                <li>
-                    <a href="/network" title="Charging Guide">Charging Guide</a>
-                </li>
-                <li>
-                    <a href="/contact" title="Contact">Contact Us</a>
-                </li>
-            </ul>
-            <ul class="col-sm-2">
-                <h6>Invest</h6>
-                <li>
-                    <a href="/invest" title="Invest">Invest</a>
-                </li>
-                <li>
-                    <a href="/faq" title="FAQ">FAQ</a>
-                </li>
-            </ul>
-
-            <div class="col-sm-4">
-                <div id="mc_embed_signup">
-                    <form action="https://chargesharenetwork.us19.list-manage.com/subscribe/post?u=fc887adcd52355cd6bb164eff&amp;id=a6143a407d"
-                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
-                        novalidate>
-                        <div id="mc_embed_signup_scroll">
-                            <label for="mce-EMAIL">Subscribe to our mailing list</label>
-                            <br>
-                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary">
-                            <br>
-                            <br>
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                <input type="text" name="b_fc887adcd52355cd6bb164eff_a6143a407d" tabindex="-1" value="">
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </form>
-                </div>
-                <ul class="footer-extra-links display-flex">
-                    <li>3680 Wilshire Blvd</li>
-                    <li>Ste P04 - 1073</li>
-                    <li>Los Angeles, CA 90010</li>
-                    <li>Phone: (832) 530-8222</li>
+        <div class="row">
+            <div class="col-sm-6">
+                <ol start="2">
                     <li>
-                        <a href="mailto:contact@chargesharenetwork.com">contact@chargesharenetwork.com</a>
+                        <p>
+                            Level 2 charging uses the standard SAE J1772 connector from the previous explanation but
+                            the
+                            charger plugs into a 220volt
+                            and higher outlet. This outlet can vary depending on situation but this can be done using a
+                            standard
+                            washer outlet. Many home owners who don’t have these outlets in their garage will require a
+                            certified
+                            electrician to create this setup. Alternatively, many use public charging level 2 chargers
+                            at
+                            participating
+                            grocery stores, shopping centers and malls. These supply about 20-25 miles per hour of
+                            charge.
+                            ChargeShare
+                            will use these to supplement our nationwide deployment of fast chargers.
+                        </p>
                     </li>
-                    <li>© ChargeShare</li>
-                </ul>
+                    <li>
+                        <p>
+                            Finally, the moment you’ve been waiting for. Fast Chargers using level 3 and up can charger
+                            a
+                            vehicle from empty to full
+                            in a slow as 1 hour to as fast as 10 minutes depending on electrical grid and kilowatt
+                            hours
+                            your
+                            car
+                            can accept with its onboard charger.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="col-sm-6">
+                <img src="./assets/images/adapters.jpg" id="adapters">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <p class="bold">Disclaimer:</p>
+            <p>Your vehicle needs to be equipped with fast charging capabilities to take advantage of the
+                infrastructure. ChargeShare’s chargers will vary in quickness and efficiency depending on fast charger
+                selected and local infrastructure. Our chargers are planned to be deployed across the USA and will
+                cater to all cars. This includes ChadeMo, CCS, and adaptors for Tesla vehicles.
+
+                If you don’t know what that means, don’t sweat it. Our website and mobile application will come
+                equipped with a guide to help you know which charging plug to use at any of our locations.
+
+                Also, this guide will indicate general charge times of which will help you plan travel experiences
+                accordingly.</p>
+        </div>
+
+        <div class="row">
+            <p>We hope this has helped in your journey to driving electric. We look forward to serving you with our
+                chargers and providing you the highest level of service. If you have any questions for us, please don’t
+                hesitate to reach out via our <a href="/contact">contact page.</a></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row" id="top-row">
+                <div class="col-sm-2">
+
+                </div>
+                <div class="col-sm-8 justify-content-center">
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Use</a> |
+                    <a href="/contact.html">Contact Us</a>
+
+                </div>
+                <div class="col-sm-2">
+
+                </div>
+            </div>
+
+            <div class="row" id="bottom-row">
+                <div class="col-sm-6">
+
+                </div>
+
+                <div class="col-sm-6">
+                    <a href="#" class="ui_twitter" title="Twitter" target="_blank">
+                        <span style="font-size: 15px">
+                            <i class="fab fa-twitter-square"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="ui_facebook" title="Facebook" target="_blank">
+                        <span style="font-size: 15px">
+                            <i class="fab fa-facebook"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="ui_instagram" title="Instagram" target="_blank">
+                        <span style="font-size: 15px">
+                            <i class="fab fa-instagram"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="ui_dribbble" title="Noun Project Dribble" target="_blank">
+                        <span style="font-size: 15px">
+                            <i class="fab fa-linkedin"></i>
+                        </span>
+                    </a>
+                </div>
+
             </div>
         </div>
 
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
 </body>
 

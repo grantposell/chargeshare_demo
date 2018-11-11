@@ -1,53 +1,101 @@
-/*
-COLORS
-BLUE: #174076
-BLOOD ORAANGE: #F9400F
-LIGHT ORANGE: #F4611E
-YELLOW: #F5A745
-PEARL: #EDE7CA
-*/
+/* OVERALL LAYOUT */
 
 body {
     overflow: scroll;
 }
 
-.bg-light {
-    background-color: #fdfdfd00 !important;
-}
+
+/* Nav Bar */
 .nav-item {
     font-family: 'Source Sans Pro', sans-serif;
     
-}
-a {
-    color: #F9400F;
 }
 
 .nav-link:hover {
     color: white;
 }
 
+a {
+    color: #F9400F;
+}
+
+.bg-light {
+    background-color: #fdfdfd00 !important;
+}
+
+ul.navbar-nav li.dropdown:hover div.dropdown-menu {
+    display: block;
+}
+/* End Nav */
+
 .container-fluid {
     padding-left: 0px;
     padding-right: 0px;
 }
 
-/* .section-one {
-    background-image: url("../images/nissan.jpg");
-    height: 850px;
-
-/* 
-img {
-    object-fit: contain;
-} */
-
 .section-two {
-    background-image: url("../images/car.jpg");
+    /* background-image: url("../images/car.jpg");
     height: 530px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     margin-bottom: 15px;
 }
 
+h2 {
+    color: black;
+}
 
+h6,
+h5 {
+    font-family: 'Crimson Text', serif;
+    color: #174076;
+}
+
+h5 {
+    text-decoration: underline;
+}
+
+h6 {
+    font-weight: bold;
+}
+
+p,
+ul {
+    font-family: 'Crimson Text', serif;
+    color: #4B4B4B;
+    list-style: none;
+}
+
+
+/* Footer */
+footer {
+    background-color: #B6D6CC;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.col-md-2 {
+    color: #4B4B4B;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social {
+    color: #FDFDFD;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* End Footer */
+
+/* END LAYOUT */
+
+
+/* OUR NETWORK */
 #map {
     height: 600px;
     width: 100%;
@@ -68,7 +116,7 @@ img {
 }
 
 .PlanYear {
-    background-color: white; 
+    background-color: white;
     border: none;
     color: black;
     padding: 16px 32px;
@@ -78,7 +126,7 @@ img {
     text-decoration: none;
     font-size: 16px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; 
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -94,41 +142,18 @@ img {
     background-color: #4CAF50;
 }
 
-#typed1 {
-    color: white;
-    font-family: 'Noto Serif', serif;
-    font-size: 65px;
-    color: #4B4B4B;
-    text-shadow: -1px 0 #C9C9C9, 0 1px #C9C9C9, 1px 0 #C9C9C9, 0 -1px #C9C9C9;
-    padding-top: 2em;
-}
-
-.network-header, .invest-header {
+.network-header,
+.invest-header {
     text-align: center
 }
 
-h6, h5 {
-    font-family: 'Crimson Text', serif;
-    color: #174076;
-}
+/* END NETWORK */
 
 
-p,
-ul {
-    font-family: 'Crimson Text', serif;
-    color: #4B4B4B;
-    list-style: none;
-}
 
-/* li {
-    list-style: none;
-} */
-
-.col-md-2 { 
-    color: #4B4B4B;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 20px;
+/* CONTACT */
+.contact-card {
+    padding: 5% 10%;
 }
 
 .contact-one,
@@ -140,17 +165,13 @@ ul {
     margin-bottom: 30px;
 }
 
-h5 {
-    text-decoration: underline;
-}
+/* END CONTACT */
 
-h6 {
-    font-weight: bold;
-}
 
 .about-section {
     text-align: center;
 }
+
 .summary {
     width: 80%;
 }
@@ -167,35 +188,19 @@ h6 {
     text-align: center;
 }
 
-.card {
+/* .card {
     margin-bottom: 10px;
     width: 22rem !important;
     color: #4B4B4B;
     width: 800px;
     margin: 50px auto 0;
-    padding: 60px 30px;
     border: 1px solid #4B4B4B;
-}
+} */
 
 .card-title {
     color: #2575B2;
 }
 
-/* .invest {
-    padding-top: 50px;
-} */
-
-.social {
-    /* background-color: #2575B2; */
-    color: #FDFDFD;
-    font-weight: bold;
-    margin-top: 10px;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 .col-md-9 {
     text-align: center;
@@ -203,54 +208,15 @@ h6 {
 
 .box {
     border-radius: .25rem;
-    border: #4B4B4B solid 1px!important;
+    border: #4B4B4B solid 1px !important;
 }
 
 
-footer {
-    background-color: #B6D6CC;
-    font-size: 1rem;
-    width: 100%;
-}
 
 
-.p-2 {
-    padding: .5em 0px !important;
-}
-
+/* MAILCHIMP */
 .subscribe {
     padding: 0px 165px 0px 330px !important;
-}
-
-
-.wrapper__title {
-    text-transform: capitalize;
-    margin: 0 0 40px;
-    color: #FEF43D;
-}
-
-h2 {
-    color: black;
-}
-
-.L2_charger {
-    padding-top: 5px;
-}
-
-.l2_title {
-    color: #C9C9C9;
-}
-
-.L3_charger {
-    padding-top: 5px;
-}
-
-.l3_title {
-    color: #C9C9C9;
-}
-
-.bg-success {
-    background-color: #2575B2 !important;
 }
 
 #mc_embed_signup {
@@ -266,6 +232,10 @@ h2 {
 
 #mce-EMAIL {
     width: 140px;
+    border: groove #2575B2 1px;
+    border-radius: .25rem;
+    font-size: 16px;
+    height: 2.25em;
 }
 
 #mc-embedded-subscribe {
@@ -281,27 +251,14 @@ h2 {
     border: #FDFDFD solid 1px;
 }
 
-.bold {
-    font-weight: bold
+/* END MAILCHIMP */
+
+
+.wrapper__title {
+    text-transform: capitalize;
+    margin: 0 0 40px;
+    color: #FEF43D;
 }
 
-#adapters {
-    width: 60%;
-    height: 40%;
-}
 
-/* .dropdown:hover>.dropdown-menu {
-    display: block;
-  } */
 
-  /* .dropdown:hover > .dropdown-menu {
-    display: block;
-}
-.dropdown > .dropdown-toggle:active { */
-    /*Without this, clicking will make it sticky*/
-    /* pointer-events: none;
-} */
-
-ul.navbar-nav li.dropdown:hover div.dropdown-menu {
-    display: block;
-}

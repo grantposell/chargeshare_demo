@@ -1,15 +1,39 @@
+.card {
+    margin-bottom: 5%;
+}
+
+.pricing-nav {
+    margin-bottom: 3%;
+}
+
+.L2_charger {
+    padding-top: 5px;
+}
+
+.l2_title {
+    color: #C9C9C9;
+}
+
+.L3_charger {
+    padding-top: 5px;
+}
+
+.l3_title {
+    color: #C9C9C9;
+}
 
 .calculator-card {
     width: 35em!important;
     background-color: #4B4B4B;
     color: #FEF43D;
-    /* float: left; */
+    padding: 5% 10%;
 }
 
 .info-card {
     width: 42em!important;
     padding-bottom: 15px;
     border: none;
+    padding: 2% 10%;
 }
 
 .l2_text{
@@ -72,4 +96,8 @@
 
 .col-md-6{
     padding-bottom: 50px;
+}
+
+.content-card {
+    width: 80%!important;
 }
