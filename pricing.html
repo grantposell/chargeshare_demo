@@ -10,12 +10,22 @@
         crossorigin="anonymous">
 
     <!-- <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css"> -->
-    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
-    <link rel="stylesheet" href="./assets/css/calculator.css" type="text/css">
+    <link rel="stylesheet" href="./public/assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="public/assets/css/memberships.css" />
+    <link rel="stylesheet" href="public/assets/css/foundation.css" />
+    <link rel="stylesheet" href="public/assets/css/contribute.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Mukta+Malar|Noto+Serif|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
-
+    
+    <script type="text/javascript" src="public/assets/js/StateSelector.js"></script>
+    <script src="public/assets/js/vendor/modernizr.js"></script> <!--DETECT CAPABILITIES OF BROWSER AND ADJUST FEATURES ACCORIDNGLY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="public/assets/js/vendor/modernizr.js"></script> <!--DETECT CAPABILITIES OF BROWSER AND ADJUST FEATURES ACCORIDNGLY-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="src/togglebutton.js"></script> 
 
 </head>
 
@@ -62,31 +72,29 @@
         </div>
     </nav>
 
-    <div class="container" id="main-container">
-
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="location-tab" data-toggle="tab" href="#location" role="tab"
-                    aria-controls="location" aria-selected="true">Location Pricing</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="membership-tab" data-toggle="tab" href="#membership" role="tab" aria-controls="membership"
-                    aria-selected="false">Membership</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="contribute-tab" data-toggle="tab" href="#contribute" role="tab" aria-controls="contribute"
-                    aria-selected="false">Contribute</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="partner-tab" data-toggle="tab" href="#partner" role="tab" aria-controls="partner"
-                    aria-selected="false">Partner</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="invest-tab" data-toggle="tab" href="#invest" role="tab" aria-controls="invest"
-                    aria-selected="false">Invest</a>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
+    <ul class="nav nav-tabs" id="myTab" role="tablist" style="padding: 0px;">
+        <li class="nav-item">
+            <a class="nav-link active" id="location-tab" data-toggle="tab" href="#location" role="tab"
+                aria-controls="location" aria-selected="true">Location Pricing</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="membership-tab" data-toggle="tab" href="#membership" role="tab" aria-controls="membership"
+                aria-selected="false">Membership</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="contribute-tab" data-toggle="tab" href="#contribute" role="tab" aria-controls="contribute"
+                aria-selected="false">Contribute</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="partner-tab" data-toggle="tab" href="#partner" role="tab" aria-controls="partner"
+                aria-selected="false">Partner</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="invest-tab" data-toggle="tab" href="#invest" role="tab" aria-controls="invest"
+                aria-selected="false">Invest</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="location" role="tabpanel" aria-labelledby="location-tab">
                 <div class="row justify-content-center" id="location">
                     <div class="card content-card">
@@ -110,7 +118,324 @@
                             Membership
                         </div>
                         <div class="card-body">
-                            
+                            <div class="Private-plan-container">
+                                <hr/>
+                                <h1 class="Private-Plan-header">Private Plans</h1>
+                                <hr/>
+                                <div class="columns state-selection">
+                                    <div class="small-7 columns">
+                                        Select your location for pricing options
+                                    </div>
+                                    <div class="small-4 columns">
+                                        <select id="private-dropdown" class="div-toggle"  data-target=".Private-State-Selection">
+                                            <option data-show=".private-1">Alabama</option>
+                                            <option data-show=".private-1">Alaska</option>
+                                            <option data-show=".private-1">Arizona</option>
+                                            <option data-show=".private-1">Arkansas</option>
+                                            <option data-show=".private-2" selected>California</option>
+                                            <option data-show=".private-3">Colorado</option>
+                                            <option data-show=".private-1">Connecticut</option>
+                                            <option data-show=".private-1">Delaware</option>
+                                            <option data-show=".private-2">District Of Columbia</option>
+                                            <option data-show=".private-2">Florida</option>
+                                            <option data-show=".private-2">Georgia</option>
+                                            <option data-show=".private-2">Hawaii</option>
+                                            <option data-show=".private-3">Idaho</option>
+                                            <option data-show=".private-3">Illinois</option>
+                                            <option data-show=".private-3">Indiana</option>
+                                            <option data-show=".private-1">Iowa</option>
+                                            <option data-show=".private-2">Kansas</option>
+                                            <option data-show=".private-3">Kentucky</option>
+                                            <option data-show=".private-2">Louisiana</option>
+                                            <option data-show=".private-2">Maine</option>
+                                            <option data-show=".private-2">Maryland</option>
+                                            <option data-show=".private-1">Massachusetts</option>
+                                            <option data-show=".private-3">Michigan</option>
+                                            <option data-show=".private-1">Minnesota</option>
+                                            <option data-show=".private-3">Mississippi</option>
+                                            <option data-show=".private-3">Missouri</option>
+                                            <option data-show=".private-3">Montana</option>
+                                            <option data-show=".private-1">Nebraska</option>
+                                            <option data-show=".private-3">Nevada</option>
+                                            <option data-show=".private-2">New Hampshire</option>
+                                            <option data-show=".private-3">New Jersey</option>
+                                            <option data-show=".private-3">New Mexico</option>
+                                            <option data-show=".private-1">New York</option>
+                                            <option data-show=".private-2">North Carolina</option>
+                                            <option data-show=".private-1">North Dakota</option>
+                                            <option data-show=".private-3">Ohio</option>
+                                            <option data-show=".private-3">Oklahoma</option>
+                                            <option data-show=".private-2">Oregon</option>
+                                            <option data-show=".private-3">Pennsylvania</option>
+                                            <option data-show=".private-1">Rhode Island</option>
+                                            <option data-show=".private-1">South Carolina</option>
+                                            <option data-show=".private-1">South Dakota</option>
+                                            <option data-show=".private-2">Tennessee</option>
+                                            <option data-show=".private-3">Texas</option>
+                                            <option data-show=".private-2">Utah</option>
+                                            <option data-show=".private-2">Vermont</option>
+                                            <option data-show=".private-1">Virginia</option>
+                                            <option data-show=".private-1">Washington</option>
+                                            <option data-show=".private-2">West Virginia</option>
+                                            <option data-show=".private-2">Wisconsin</option>
+                                            <option data-show=".private-1">Wyoming</option>
+                                        </select>
+                                    </div>
+                                    <div class="small-1 columns"></div>
+                                </div>
+                                <div class="small-3 columns">
+                                    <ul class="pricing-table active-tb mrgn-20-top">
+                                        <li class="title-blue text-transform">City</li>
+                                        <li class="bullet-item minutes-bullet">DC Fast Charging:<br/>
+                                            <div class="Private-State-Selection">
+                                                <div class="private-1 hide">
+                                                    <span class="plan-amount">75 minutes<span class="month-size"> /mo</span></span><span class="reference-size"> 1</span>
+                                                </div>
+                                                <div class="private-2 hide">
+                                                    <span class="plan-amount">85 minutes<span class="month-size"> /mo</span></span><span class="reference-size"> 1</span>
+                                                </div>
+                                                <div class="private-3 hide">
+                                                    <span class="plan-amount">95 minutes<span class="month-size"> /mo</span></span><span class="reference-size"> 1</span>
+                                                </div>
+                                            </div>
+                                        <li class="bullet-item">NO Session Fees</li>
+                                        <li class="bullet-item">30-Minute Session Length</li>
+                                        <li class="bullet-item minutes-bullet">Level 2 Charging <i>Available</i></li>                      
+                                        <li class="bullet-item"><br/></li>
+                                        <li class="price">$100<span class="year-size">/yr</span></li>
+                                        <li class="cta-button">
+                                            <a class="button details-button text-transform" data-toggle="modal" data-target="#DetailsModal">Details</a> 
+                                            <a class="button choose-button text-transform" href="#">Choose</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="small-3 columns">
+                                    <ul class="pricing-table active-tb mrgn-20-top">
+                                        <li class="title-blue text-transform">Commuter</li>
+                                        <li class="bullet-item minutes-bullet">DC Fast Charging:<br/>
+                                            <div class="Private-State-Selection">
+                                                <div class="private-1 hide">
+                                                    <span class="plan-amount">225 minutes<span class="month-size"> /mo</span></span><span class="reference-size"> 1</span>
+                                                </div>
+                                                <div class="private-2 hide">
+                                                    <span class="plan-amount">325 minutes<span class="month-size"> /mo</span></span><span class="reference-size"> 1</span>
+                                                </div>
+                                                <div class="private-3 hide">
+                                                    <span class="plan-amount">425 minutes<span class="month-size"> /mo</span></span><span class="reference-size"> 1</span>
+                                                </div>
+                                            </div>
+                                        <li class="bullet-item">NO Session Fees</li>
+                                        <li class="bullet-item">45-Minute Session Length</li>                
+                                        <li class="bullet-item minutes-bullet">Level 2 Charging <i>Included</i><span class="reference-size"> 3</span></li>                
+                                        <li class="bullet-item">Rollover: <strong>1 month</strong></li>
+                                        <li class="price">$250<span class="year-size">/yr</span></li>
+                                        <li class="cta-button">
+                                            <a class="button details-button text-transform" data-toggle="modal" data-target="#DetailsModal">Details</a> 
+                                            <a class="button choose-button text-transform" href="#">Choose</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="small-3 columns">
+                                    <ul class="pricing-table active-tb mrgn-20-top">
+                                        <li class="title-blue text-transform">Traveler</li>
+                                        <li class="bullet-item minutes-bullet">DC Fast Charging:
+                                            <div class="Private-State-Selection">
+                                                <div class="private-1 hide">
+                                                    <span class="plan-amount">500 minutes<span class="month-size"> /mo</span></span><span class="reference-size"> 1</span>
+                                                </div>
+                                                <div class="private-2 hide">
+                                                    <span class="plan-amount">600 minutes<span class="month-size"> /mo</span></span><span class="reference-size"> 1</span>
+                                                </div>
+                                                <div class="private-3 hide">
+                                                    <span class="plan-amount">700 minutes<span class="month-size"> /mo</span></span><span class="reference-size"> 1</span>
+                                                </div>
+                                            </div>
+                                        <li class="bullet-item">NO Session Fees</li>
+                                        <li class="bullet-item">60-Minute Session Length</li>
+                                        <li class="bullet-item minutes-bullet">Level 2 Charging <i>Included</i><span class="reference-size"> 3</span></li>
+                                        <li class="bullet-item">Rollover: <strong>1 month</strong></li>
+                                        <li class="price">$500<span class="year-size">/yr</span></li>
+                                        <li class="cta-button">
+                                            <a class="button details-button text-transform" data-toggle="modal" data-target="#DetailsModal">Details</a> 
+                                            <a class="button choose-button text-transform" href="#">Choose</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="small-3 columns">
+                                    <ul class="pricing-table active-tb mrgn-20-top">
+                                        <li class="title-blue text-transform">Unlimited</li>
+                                        <li class="bullet-item minutes-bullet">DC Fast Charging:
+                                            <div class="unlimited-plan">
+                                                <span class="plan-amount">Unlimited</span><span class="reference-size"> 2</span>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">NO Session Fees</li>
+                                        <li class="bullet-item">90-Minute Session Length</li>
+                                        <li class="bullet-item minutes-bullet">Level 2 Charging <i>Included</i><span class="reference-size"> 3</span></li>                
+                                        <li class="bullet-item"><br/></li>
+                                        <li class="price">$750<span class="year-size">/yr</span></li>
+                                        <li class="cta-button">
+                                            <a class="button details-button text-transform" data-toggle="modal" data-target="#DetailsModal">Details</a> 
+                                            <a class="button choose-button text-transform" href="#">Choose</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="text-center">
+                                    Advertised charging plan valid on ChargeShare Network only. Out-of-Network charging subject to seperate pricing. See details for additional information.
+                                </div>
+                                <script>
+                                    var obj = document.getElementById("private-dropdown");
+                                    InitializeTable(obj);
+                                </script>
+                            </div>
+                            <div class="Commercial-plan-container">
+                                <hr/>
+                                <h1 class="Commercial-Plan-header">Commercial Plans</h1>
+                                <hr/>
+                                <div class="columns state-selection">
+                                    <div class="small-7 columns">
+                                        Select your location for pricing options
+                                    </div>
+                                    <div class="small-4 columns">
+                                        <select id="commercial-dropdown" class="div-toggle"  data-target=".Comercial-State-Selection">
+                                            <option data-show=".commercial-1">Alabama</option>
+                                            <option data-show=".commercial-1">Alaska</option>
+                                            <option data-show=".commercial-1">Arizona</option>
+                                            <option data-show=".commercial-1">Arkansas</option>
+                                            <option data-show=".commercial-2" selected>California</option>
+                                            <option data-show=".commercial-3">Colorado</option>
+                                            <option data-show=".commercial-1">Connecticut</option>
+                                            <option data-show=".commercial-1">Delaware</option>
+                                            <option data-show=".commercial-2">District Of Columbia</option>
+                                            <option data-show=".commercial-2">Florida</option>
+                                            <option data-show=".commercial-2">Georgia</option>
+                                            <option data-show=".commercial-2">Hawaii</option>
+                                            <option data-show=".commercial-3">Idaho</option>
+                                            <option data-show=".commercial-3">Illinois</option>
+                                            <option data-show=".commercial-3">Indiana</option>
+                                            <option data-show=".commercial-1">Iowa</option>
+                                            <option data-show=".commercial-2">Kansas</option>
+                                            <option data-show=".commercial-3">Kentucky</option>
+                                            <option data-show=".commercial-2">Louisiana</option>
+                                            <option data-show=".commercial-2">Maine</option>
+                                            <option data-show=".commercial-2">Maryland</option>
+                                            <option data-show=".commercial-1">Massachusetts</option>
+                                            <option data-show=".commercial-3">Michigan</option>
+                                            <option data-show=".commercial-1">Minnesota</option>
+                                            <option data-show=".commercial-3">Mississippi</option>
+                                            <option data-show=".commercial-3">Missouri</option>
+                                            <option data-show=".commercial-3">Montana</option>
+                                            <option data-show=".commercial-1">Nebraska</option>
+                                            <option data-show=".commercial-3">Nevada</option>
+                                            <option data-show=".commercial-2">New Hampshire</option>
+                                            <option data-show=".commercial-3">New Jersey</option>
+                                            <option data-show=".commercial-3">New Mexico</option>
+                                            <option data-show=".commercial-1">New York</option>
+                                            <option data-show=".commercial-2">North Carolina</option>
+                                            <option data-show=".commercial-1">North Dakota</option>
+                                            <option data-show=".commercial-3">Ohio</option>
+                                            <option data-show=".commercial-3">Oklahoma</option>
+                                            <option data-show=".commercial-2">Oregon</option>
+                                            <option data-show=".commercial-3">Pennsylvania</option>
+                                            <option data-show=".commercial-1">Rhode Island</option>
+                                            <option data-show=".commercial-1">South Carolina</option>
+                                            <option data-show=".commercial-1">South Dakota</option>
+                                            <option data-show=".commercial-2">Tennessee</option>
+                                            <option data-show=".commercial-3">Texas</option>
+                                            <option data-show=".commercial-2">Utah</option>
+                                            <option data-show=".commercial-2">Vermont</option>
+                                            <option data-show=".commercial-1">Virginia</option>
+                                            <option data-show=".commercial-1">Washington</option>
+                                            <option data-show=".commercial-2">West Virginia</option>
+                                            <option data-show=".commercial-2">Wisconsin</option>
+                                            <option data-show=".commercial-1">Wyoming</option>
+                                        </select>
+                                    </div>
+                                    <div class="small-1 columns"></div>
+                                </div>
+                                <div class="row ">
+                                    <div class="large-1 columns"></div>
+                                    <div class="large-5 columns">
+                                        <ul class="pricing-table active-tb shadow mrgn-20-top">
+                                            <li class="title-blue text-transform">Fleet</li>
+                                            <li class="bullet-item minutes-bullet">DC Fast Charging:
+                                                <div class="Comercial-State-Selection">
+                                                    <div class="commercial-1 hide">
+                                                        <span class="plan-amount">2,000 minutes<span class="month-size"> /mo</span></span><span class="reference-size"> 1</span>
+                                                    </div>
+                                                    <div class="commercial-2 hide">
+                                                        <span class="plan-amount">3,000 minutes<span class="month-size"> /mo</span></span><span class="reference-size"> 1</span>
+                                                    </div>
+                                                    <div class="commercial-3 hide">
+                                                        <span class="plan-amount">4,000 minutes<span class="month-size"> /mo</span></span><span class="reference-size"> 1</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="bullet-item">Up to 4 Vehicles</li>                
+                                            <li class="bullet-item">NO Session Fees</li>
+                                            <li class="bullet-item">60-Minute Session Length</li>
+                                            <li class="bullet-item minutes-bullet">Level 2 Charging <i>Available</i></li>                
+                                            <li class="price">$2,000<span class="year-size">/yr</span></li>
+                                            <li class="cta-button">
+                                                <a class="button details-button text-transform" data-toggle="modal" data-target="#DetailsModal">Details</a> 
+                                                <a class="button choose-button text-transform" href="#">Choose</a>
+                                            </li>
+                                      </ul>
+                                    </div>
+                                    <div class="large-5 columns">
+                                        <ul class="pricing-table active-tb mrgn-20-top">
+                                            <li class="title-blue text-transform">Fleet Unlimited</li>
+                                            <li class="bullet-item minutes-bullet">DC Fast Charging:
+                                                <div class="unlimited-plan">
+                                                    <span class="plan-amount">Unlimited</span><span class="reference-size"> 2</span>
+                                                </div>
+                                            </li>
+                                            <li class="bullet-item">Up to 8 Vehicles</li>                
+                                            <li class="bullet-item">NO Session Fees</li>
+                                            <li class="bullet-item">60-Minute Session Length</li>
+                                            <li class="bullet-item minutes-bullet">Level 2 Charging <i>Included</i><span class="reference-size"> 3</span></li>                
+                                            <li class="price">$4,000<span class="year-size">/yr</span></li>
+                                            <li class="cta-button">
+                                                <a class="button details-button text-transform" data-toggle="modal" data-target="#DetailsModal">Details</a> 
+                                                <a class="button choose-button text-transform" href="#">Choose</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="large-1 columns"></div>
+                                    <script>
+                                        var obj = document.getElementById("commercial-dropdown");
+                                        InitializeTable(obj);
+                                    </script>
+                                </div>
+                                <div class="text-center">
+                                    Advertised charging plan valid on ChargeShare Network only. Out-of-Network charging subject to seperate pricing. See details for additional information.
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="DetailsModal" tabindex="-1" role="dialog" aria-labelledby="DetailsModalTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="DetailsModalTitle">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    ...
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <script src="public/assets/js/vendor/jquery.js"></script>
+                            <script src="public/assets/js/foundation.js"></script>
+                            <script>
+                                $(document).foundation();
+                            </script>
                         </div>
                     </div>
 
@@ -123,7 +448,801 @@
                             Contribute
                         </div>
                         <div class="card-body">
-                            <p>Interested in getting a financial return on a rapidly growing industry?<br><Br>
+                            <div class="contribution-plot-container">
+                                <div class="calc-container">
+                                    <div class="row">
+                                        <div class="col-md-6 mrgn-30-top input-container">
+                                            <div class="Contribution-subtitle">
+                                                Your Contribution
+                                            </div>
+                                            <div class="Contribution-prompt">
+                                                Contribution Length
+                                            </div>
+                                            <div class="Contribution-slider">
+                                                <input type="range" min="6" max="60" value="6" step="0.1" class="contribution-length-slider" data-thumbwidth="25">
+                                                <output name="rangeVal">6 months</output>
+                                            </div>
+                                            <div class="mrgn-30-top  Contribution-prompt">
+                                                How much do you want to contribute?
+                                            </div>
+                                            <div class="btn-group contribute-btns">
+                                                <button class="button button-contribute" data-value=100 data-toggle-group="button-contribute">$100</button>
+                                                <button class="button button-contribute" data-value=250 data-toggle-group="button-contribute">$250</button>
+                                                <button class="button button-contribute active" data-value=500 data-toggle-group="button-contribute">$500</button>
+                                                <button class="button button-contribute" data-value=1000 data-toggle-group="button-contribute">$1K</button>
+                                                <input class="calc-input input-contribute" placeholder="$ Amount" type="tel" value="">
+                                            </div>
+                                            <div class="mrgn-70-top Contribution-prompt">
+                                                How much do you want to add each month?
+                                            </div>
+                                            <div class="btn-group addition-btns">
+                                                <button class="button button-addition" data-value=0 data-toggle-group="button-addition">$0</button>
+                                                <button class="button button-addition active" data-value=10 data-toggle-group="button-addition">$10</button>
+                                                <button class="button button-addition" data-value=100 data-toggle-group="button-addition">$100</button>
+                                                <button class="button button-addition" data-value=500 data-toggle-group="button-addition">$500</button>
+                                                <input class="calc-input input-addition" prefix="$" placeholder="$ Amount" type="text" pattern= "[0-9]" value="">
+
+                                                <script>
+                                                    $('.btn-group').on('click', '.calc-input', function(event) {
+                                                        var btns = $(this).parent().children('.button');
+                                                        for (var i = 0; i < btns.length; i++) {
+                                                            var btn = btns[i];
+                                                            if (btn.classList.contains("active")) {
+                                                              btn.className = btn.className.replace(" active", "");
+                                                              break;
+                                                            }        
+                                                        }
+                                                        if (!this.classList.contains("selected")) {
+                                                            this.className += " selected";
+                                                        }
+
+                                                        if ( this.classList.contains("input-contribute")) {
+                                                            ContributionAmount = Number(numberWithoutCommas($(this).val().substr(1)));
+                                                        }
+                                                        else {
+                                                            ContributionAddition = Number(numberWithoutCommas($(this).val().substr(1)));
+                                                        }
+
+                                                        //update chart
+                                                        updateChartValues();
+                                                    });
+
+                                                    $('.btn-group').on('click', '.button', function(event) {
+                                                        var btns = $(this).parent().children('.button');
+                                                        var input = $(this).parent().children('.calc-input')[0];
+
+                                                        for (var i = 0; i < btns.length; i++) {
+                                                            var btn = btns[i];
+                                                            if (btn.classList.contains("active")) {
+                                                              btn.className = btn.className.replace(" active", "");
+                                                              break;
+                                                            }        
+                                                        }
+
+                                                        if (input.classList.contains("selected")) {
+                                                            input.className = input.className.replace(" selected", "");     
+                                                        }
+                                                        if (!this.classList.contains("active")) {
+                                                            this.className += " active";
+                                                        }
+
+                                                        //update chart
+                                                        updateChartValues();
+                                                    });
+
+                                                    $('.calc-input').keydown(function(e) {
+                                                        var newKey = e.keyCode;
+                                                        if ( (newKey == 8 || newKey == 127) ||
+                                                            (newKey == 37 || newKey == 39) ) {
+                                                            if ( this.selectionStart == 0 || 
+                                                                this.selectionStart == 1 ) {
+                                                                this.selectionStart = 1;
+                                                                return false;
+                                                            }
+                                                            else if ( $(this).val().length == 2 ) {
+                                                                $(this).val('');
+                                                            }
+                                                            return true;
+                                                        } 
+                                                        else if ( newKey > 47 && newKey < 58 ) {
+                                                            if ($(this).val() == ''){
+                                                                $(this).val('$' + (newKey - 48));
+                                                            }
+                                                            else {
+                                                                var NewNumber = (Number(numberWithoutCommas($(this).val().substr(1)))*10) + (newKey - 48);
+                                                                // don't let someone contribute more than the price of a charger
+                                                                if ( NewNumber <= ChargerCost ) {
+                                                                    var result = numberWithCommas(NewNumber);
+                                                                    $(this).val('$' + result);
+                                                                }
+                                                            }
+                                                        }
+                                                        return false;
+                                                    });
+
+                                                    $('.calc-input').on('keyup', function() {
+                                                        if ( this.classList.contains("input-contribute")) {
+                                                            var TempContributionAmount = Number(numberWithoutCommas($(this).val().substr(1)));
+                                                            if ( ContributionAmount != TempContributionAmount ) {
+                                                                ContributionAmount = TempContributionAmount;
+                                                                $(this).val('$' + numberWithCommas(ContributionAmount));
+                                                            }
+                                                        }
+                                                        else {
+                                                            var TempContributionAddition = Number(numberWithoutCommas($(this).val().substr(1)));
+                                                            if ( ContributionAddition != TempContributionAddition ) {
+                                                                ContributionAddition = TempContributionAddition;
+                                                                $(this).val('$' + numberWithCommas(ContributionAddition));
+                                                            }
+                                                        }
+
+                                                        //update chart
+                                                        updateChartValues();
+                                                    });
+
+                                                    $('.contribution-length-slider').on('input', function() {
+                                                        var control = $(this),
+                                                        controlMin = control.attr('min'),
+                                                        controlMax = control.attr('max'),
+                                                        controlVal = control.val(),
+                                                        controlThumbWidth = control.data('thumbwidth');
+                                                        ContributionLength = Math.round(controlVal);
+
+                                                        var range = controlMax - controlMin;
+
+                                                        var position = ((controlVal - controlMin) / range) * 100;
+                                                        var positionOffset = Math.round(controlThumbWidth * position / 100) - (controlThumbWidth / 2);
+                                                        var output = control.next('output');
+
+                                                        output.css('left', 'calc(' + position + '% - ' + positionOffset + 'px)').text(ContributionLength + " " + "months");
+                                                    });
+
+                                                    $('.contribution-length-slider').on('change', function() {
+                                                        //update chart
+                                                        updateChartLength();
+
+                                                    });
+
+                                                    //$('.PlanYear').on('mouseover', function () { $(this).click(); });
+                                                    //$(".button-contribute").toggleButton({radio: true});
+                                                    //$(".button-addition").toggleButton({radio: true});
+                                                </script>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 plot-container">
+                                            <div class="mrgn-30-top row">
+                                                <div class="outcome-subtitle">
+                                                Your Outcome
+                                                </div>
+                                                <div class="plot-configuration">
+                                                    <i class="fa fa-money" ></i>
+                                                    Contribution: <span style="font-weight:bold" class="TotalContributed"></span>
+                                                </div>
+                                                <div class="plot-configuration">
+                                                    <i class="fa fa-calendar" ></i>
+                                                    Year: <span style="font-weight:bold" class="TotalLength"></span>
+                                                </div>
+                                            </div>
+                                            <div class="mrgn-30-top row">
+                                                <div class="col-md-5"></div>
+                                                <div class="col-md-3 outcome-catagories-1">
+                                                    Conservative<span class="popup-outcome-catagories-1">Income Withdrawn</span>
+                                                </div>                        
+                                                <div class="col-md-4 outcome-catagories-2">
+                                                    Aggressive<span class="popup-outcome-catagories-2">Income Reinvested</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5 outcome-prompt">
+                                                Income Total:
+                                                </div>
+                                                <div class="col-md-3 outcome-values TotalWithoutRecon"></div>
+                                                <div class="col-md-4 outcome-values TotalWithRecon"></div>
+                                            </div>
+                                            <hr/ style="margin-bottom: 20px; margin-top: 20px;">
+                                            <div class="row">
+                                                <div class="col-md-5 outcome-prompt">
+                                                Income Average:
+                                                </div>
+                                                <div class="col-md-3 outcome-values">
+                                                    <span class="MonthlyNotReinvested"></span> / mo
+                                                </div>
+                                                <div class="col-md-4 outcome-values">
+                                                    <span class="MonthlyReinvested"></span> / mo
+                                                </div>
+                                            </div>
+                                            <hr/>
+                                            <div id="curve_chart" class="outcome-curve"></div>
+                                            <script type="text/javascript">
+                                                var AdminFeeNoRecontribution = 0.02;
+                                                var AdminFeeRecontribution = 0.02;
+                                                var Scale = 0.75;
+                                                var Offset = 0;
+                                                var MonthlyIncome = 2204;
+                                                var MonthsPerYear = 12;
+                                                var ChargerCost = 21000;
+                                                var CurrentYear = 2018;
+                                                var MinOffset = 2; //minimum month offset before payouts begin
+                                                var ContributionInterestNoRecontribution = (MonthlyIncome / ChargerCost) - AdminFeeNoRecontribution;
+                                                var ContributionInterestRecontribution = (MonthlyIncome / ChargerCost) - AdminFeeRecontribution;
+                                                var ContributionLength = Number($('.contribution-length-slider').val());
+                                                var ContributionAmount = 0;
+                                                var ContributionAddition = 0;
+                                                var chart;
+                                                var continuousData;
+                                                var IncomeReinvested = 0;
+                                                var IncomeNotReinvested = 0;
+                                                var ContributionTotalValue = 0;
+
+                                                var options = {
+                                                    tooltip : { trigger: 'none' },
+                                                    animation: { startup: 'false',
+                                                                duration: 1000,
+                                                                easing: 'out' },
+                                                    backgroundColor: 'ghostwhite',
+                                                    curveType: 'function',
+                                                    series: {
+                                                        0: {
+                                                            lineWidth: 4,
+                                                            color: 'rgb(102, 29, 245)',
+                                                            annotations: { textStyle: { fontSize: 12}, stemLength: 0, stemColor: 'none'},
+                                                        },
+                                                        1: {
+                                                            lineWidth: 4,
+                                                            color: 'rgb(237, 103, 63)',
+                                                            annotations: { textStyle: { fontSize: 12}, stemLength: 0, stemColor: 'none'},
+                                                        },
+                                                        2: {
+                                                            lineWidth: 3,
+                                                            color: 'gray',
+                                                            lineDashStyle: [5, 5]
+                                                        }
+
+                                                    },
+                                                    legend: { position: 'none' },
+                                                    axisTitlesPosition: 'none',
+                                                    chartArea: {left:0,top:0,width:'95%',height:'100%'},
+                                                    hAxis: {baselineColor: 'ghostwhite', 
+                                                            textPosition: 'none',
+                                                           gridlines: { color: 'rgb(235, 235, 235)', count: -1, },
+                                                           minorGridlines: { count: 0, }},
+                                                    vAxis: {minValue: 0,
+                                                            scaleType: 'log',
+                                                            baselineColor: 'ghostwhite',
+                                                            minorGridlines: { count: 0, },
+                                                            gridlines: { count: 0, }},
+                                                    annotations: { textStyle: { fontSize: 12}, stemLength: 0, stemColor: 'none', alwaysOutside: true,},
+                                                };
+
+                                                google.charts.load('current', {'packages':['corechart']});
+                                                google.charts.setOnLoadCallback(drawChart);
+
+                                                function kFormatter(num) {
+                                                    var newNum;
+                                                    if (num > 999) {
+                                                        newNum = (num/1000).toFixed(0);
+                                                        if ( newNum > 999 ) {
+                                                            newNum = (newNum/1000).toFixed(0) + 'M'; 
+                                                        }
+                                                        else {
+                                                            newNum = newNum + 'K';
+                                                        }
+                                                    }
+                                                    else {
+                                                        newNum = num;
+                                                    }
+
+                                                    return newNum;
+                                                }
+
+                                                const numberWithCommas = (x) => {
+                                                  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                                                }
+
+                                                const numberWithoutCommas = (x) => {
+                                                  return x.toString().replace(/\,/g,'');
+                                                }
+
+                                                function updateOutputNumbers() {
+                                                    ContributionTotalValue = ContributionAmount + (ContributionAddition * ContributionLength);
+
+                                                    $('.TotalContributed').html('$' + numberWithCommas(Math.round(ContributionTotalValue)));
+                                                    $('.TotalLength').html(CurrentYear + Math.round(ContributionLength/MonthsPerYear));
+                                                    $('.TotalWithoutRecon').html('$' + numberWithCommas(Math.round(IncomeNotReinvested)));
+                                                    $('.TotalWithRecon').html('$' + numberWithCommas(Math.round(IncomeReinvested)));
+
+                                                    $('.MonthlyNotReinvested').html('$' + numberWithCommas(Math.round(IncomeNotReinvested / ContributionLength)));
+                                                    $('.MonthlyReinvested').html('$' + numberWithCommas(Math.round(IncomeReinvested / ContributionLength)));                                
+                                                }
+
+                                                function drawChart() {
+                                                    //setup of amount variable with current button selection
+                                                    var contributeBtns = $('.contribute-btns').children('.button');
+                                                    for (var i = 0; i < contributeBtns.length; i++) {
+                                                        var btn = contributeBtns[i];
+                                                        if (btn.classList.contains("active")) {
+                                                          ContributionAmount = Number(btn.getAttribute("data-value"));
+                                                          break;
+                                                        }        
+                                                    }
+
+                                                    // setup of addition variable with current button selection
+                                                    var additionBtns = $('.addition-btns').children('.button');
+                                                    for (var i = 0; i < additionBtns.length; i++) {
+                                                        var btn = additionBtns[i];
+                                                        if (btn.classList.contains("active")) {
+                                                          ContributionAddition = Number(btn.getAttribute("data-value"));
+                                                          break;
+                                                        }        
+                                                    }
+
+                                                    chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+                                                    continuousData = new google.visualization.DataTable();
+
+                                                    continuousData.addColumn('number', 'Month');
+                                                    continuousData.addColumn('number', 'Without Recontribution');
+                                                    continuousData.addColumn({type:'string', role:'annotation'});
+                                                    continuousData.addColumn('number', 'With Recontribution');
+                                                    continuousData.addColumn({type:'string', role:'annotation'});
+                                                    continuousData.addColumn('number', 'Contribution Total');
+
+                                                    for( var CurrentMonth = 1; CurrentMonth <= MinOffset; CurrentMonth++) {
+                                                        continuousData.addRow([CurrentMonth, 0, null, 0, null, 0]);
+                                                    }
+
+                                                    //assume that it will take ~3 months before contributions begin seeing payout
+                                                    for (var CurrentMonth = MinOffset + 1; CurrentMonth <= ContributionLength; CurrentMonth++ ) {
+                                                        // month when subtracting payout offset
+                                                        RelativeMonth = CurrentMonth - MinOffset;
+
+                                                        ContributionTotalValue = (ContributionAmount + ContributionAddition * RelativeMonth);
+
+                                                        IncomeNotReinvested = (ContributionAmount + (ContributionAddition * (RelativeMonth+1)/2)) * ContributionInterestNoRecontribution * RelativeMonth * Scale;
+
+                                                        IncomeReinvested = (ContributionAmount * Math.pow((1 + ContributionInterestRecontribution),((RelativeMonth + Offset) * Scale)) - ContributionAmount) + (((ContributionAddition * Math.pow((1 + ContributionInterestRecontribution),((RelativeMonth + 1 + Offset) * Scale)) - ContributionAddition) / ContributionInterestRecontribution) - (ContributionAddition * ((RelativeMonth + 1 + Offset) * Scale)));
+
+                                                        IncomeReinvested = (ContributionAmount * Math.pow((1 + ContributionInterestRecontribution),((RelativeMonth + Offset) * Scale)) - ContributionAmount) + (((ContributionAddition * Math.pow((1 + ContributionInterestRecontribution),((RelativeMonth + 1 + Offset) * Scale)) - ContributionAddition) / ContributionInterestRecontribution) - (ContributionAddition * ((RelativeMonth + 1 + Offset) * Scale)));
+
+
+                                                        continuousData.addRow([CurrentMonth, IncomeReinvested, null, IncomeNotReinvested, null, ContributionTotalValue]);
+                                                    }
+
+                                                    continuousData.setValue(continuousData.getNumberOfRows() - 1, 2, "$" + kFormatter(Math.round(IncomeReinvested)).toString());
+                                                    continuousData.setValue(continuousData.getNumberOfRows() - 1, 4, "$" + kFormatter(Math.round(IncomeNotReinvested)).toString());
+
+                                                    updateOutputNumbers();
+                                                    updateTipNumbers();
+                                                    chart.draw(continuousData, options);
+                                                }
+
+                                                function updateChartValues() {
+                                                    var contributeBtns = $('.contribute-btns').children('.button');
+                                                    for (var i = 0; i < contributeBtns.length; i++) {
+                                                        var btn = contributeBtns[i];
+                                                        if (btn.classList.contains("active")) {
+                                                          ContributionAmount = Number(btn.getAttribute("data-value"));
+                                                          break;
+                                                        }        
+                                                    }
+
+                                                    // setup of addition variable with current button selection
+                                                    var additionBtns = $('.addition-btns').children('.button');
+                                                    for (var i = 0; i < additionBtns.length; i++) {
+                                                        var btn = additionBtns[i];
+                                                        if (btn.classList.contains("active")) {
+                                                          ContributionAddition = Number(btn.getAttribute("data-value"));
+                                                          break;
+                                                        }        
+                                                    }
+
+                                                    continuousData = new google.visualization.DataTable();
+                                                    continuousData.addColumn('number', 'Number');
+                                                    continuousData.addColumn('number', 'Without Recontribution');
+                                                    continuousData.addColumn({type:'string', role:'annotation'});
+                                                    continuousData.addColumn('number', 'With Recontribution');
+                                                    continuousData.addColumn({type:'string', role:'annotation'});
+                                                    continuousData.addColumn('number', 'Contribution Total');
+
+                                                    for( var CurrentMonth = 1; CurrentMonth <= MinOffset; CurrentMonth++) {
+                                                        continuousData.addRow([CurrentMonth, 0, null, 0, null, 0]);
+                                                    }
+
+                                                    //assume that it will take ~3 months before contributions begin seeing payout
+                                                    for (var CurrentMonth = MinOffset + 1; CurrentMonth <= ContributionLength; CurrentMonth++ ) {
+                                                        // month when subtracting payout offset
+                                                        RelativeMonth = CurrentMonth - MinOffset;
+
+                                                        ContributionTotalValue = (ContributionAmount + ContributionAddition * RelativeMonth);
+
+                                                        IncomeNotReinvested = (ContributionAmount + (ContributionAddition * (RelativeMonth+1)/2)) * ContributionInterestNoRecontribution * RelativeMonth * Scale;
+
+                                                        IncomeReinvested = (ContributionAmount * Math.pow((1 + ContributionInterestRecontribution),((RelativeMonth + Offset) * Scale)) - ContributionAmount) + (((ContributionAddition * Math.pow((1 + ContributionInterestRecontribution),((RelativeMonth + 1 + Offset) * Scale)) - ContributionAddition) / ContributionInterestRecontribution) - (ContributionAddition * ((RelativeMonth + 1 + Offset) * Scale)));
+
+                                                        continuousData.addRow([CurrentMonth, IncomeReinvested, null, IncomeNotReinvested, null, ContributionTotalValue]);
+                                                    }
+
+                                                    continuousData.setValue(continuousData.getNumberOfRows() - 1, 2, "$" + kFormatter(Math.round(IncomeReinvested)).toString());
+                                                    continuousData.setValue(continuousData.getNumberOfRows() - 1, 4, "$" + kFormatter(Math.round(IncomeNotReinvested)).toString());
+
+                                                    updateOutputNumbers();
+                                                    updateTipNumbers();
+                                                    chart.draw(continuousData, options);
+                                                }
+
+                                                function updateChartLength() {
+                                                    var MonthlyContributionIncome = 0;
+
+                                                    var ChartDuration = continuousData.getNumberOfRows();
+                                                    if ( ContributionLength <= ChartDuration ) {
+                                                        do {
+                                                            continuousData.removeRow( continuousData.getNumberOfRows() - 1);
+                                                        } while ( ContributionLength <= (continuousData.getNumberOfRows() -1) );
+
+                                                        var LastRowIndex = continuousData.getNumberOfRows() - 1;
+
+                                                        IncomeReinvested = continuousData.getValue(LastRowIndex, 1);
+                                                        IncomeNotReinvested = continuousData.getValue(LastRowIndex, 3);
+
+                                                        continuousData.setValue(continuousData.getNumberOfRows() - 1, 2, "$" + kFormatter(Math.round(IncomeReinvested)).toString());
+                                                        continuousData.setValue(continuousData.getNumberOfRows() - 1, 4, "$" + kFormatter(Math.round(IncomeNotReinvested)).toString());
+                                                    }
+                                                    else {
+                                                        continuousData.removeRow( continuousData.getNumberOfRows() - 1);
+
+                                                        for ( var CurrentMonth = (ChartDuration); CurrentMonth <= ContributionLength; CurrentMonth++ ) {
+                                                            // month when subtracting payout offset
+                                                            RelativeMonth = CurrentMonth - MinOffset;
+
+                                                            ContributionTotalValue = (ContributionAmount + ContributionAddition * RelativeMonth);
+
+                                                            IncomeNotReinvested = (ContributionAmount + (ContributionAddition * (RelativeMonth+1)/2)) * ContributionInterestNoRecontribution * RelativeMonth * Scale;
+
+                                                            IncomeReinvested = (ContributionAmount * Math.pow((1 + ContributionInterestRecontribution),((RelativeMonth + Offset) * Scale)) - ContributionAmount) + (((ContributionAddition * Math.pow((1 + ContributionInterestRecontribution),((RelativeMonth + 1 + Offset) * Scale)) - ContributionAddition) / ContributionInterestRecontribution) - (ContributionAddition * ((RelativeMonth + 1 + Offset) * Scale)));
+
+                                                            continuousData.addRow([CurrentMonth, IncomeReinvested, null, IncomeNotReinvested, null, ContributionTotalValue]);
+                                                        }
+
+                                                        continuousData.setValue(continuousData.getNumberOfRows() - 1, 2, "$" + kFormatter(Math.round(IncomeReinvested)).toString());
+                                                        continuousData.setValue(continuousData.getNumberOfRows() - 1, 4, "$" + kFormatter(Math.round(IncomeNotReinvested)).toString());
+                                                    }
+
+                                                    updateOutputNumbers();
+                                                    updateTipNumbers();
+                                                    chart.draw(continuousData, options);
+                                                }
+
+                                                //redraw graph when window resize is completed  
+                                                $(window).on('resizeEnd', function() {
+                                                    drawChart();
+                                                });
+
+                                                //create trigger to resizeEnd event     
+                                                $(window).resize(function() {
+                                                    if(this.resizeTO) clearTimeout(this.resizeTO);
+                                                    this.resizeTO = setTimeout(function() {
+                                                        $(this).trigger('resizeEnd');
+                                                    }, 100);
+                                                });
+
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="height: 200px; position: static;">
+                                    <svg viewBox="0 0 500 200" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                                        <defs>
+                                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="30%" style="stop-color:rgb(28, 186, 245);stop-opacity:.6" />
+                                                <stop offset="100%" style="stop-color:rgb(237, 103, 63);stop-opacity:.6" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path id="container-wave-1" d="M0.00,92.27 C216.83,292.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z"></path>
+                                    </svg>
+                                </div>
+                                <div style="margin-top: -200px; height: 150px; position: static;">
+                                    <svg viewBox="0 0 500 200" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                                        <defs>
+                                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="30%" style="stop-color:rgb(25, 111, 210);stop-opacity:0.7" />
+                                                <stop offset="100%" style="stop-color:rgb(134, 96, 250);stop-opacity:.7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path id="container-wave-2" d="M0.00,92.27 C216.83,292.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z"></path>
+                                    </svg>
+                                </div>
+                                <div style="margin-top: -150px; height: 100px; position: static;">
+                                      <svg viewBox="0 0 500 200" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                                        <path id="container-wave-3" d="M0.00,92.27 C216.83,292.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z"></path>
+                                      </svg>
+                                </div>
+                            </div>
+                            <div class="contribution-guide">
+                                <div class="pricing-title">
+                                    How much should I contribute?
+                                </div>
+                                <div class="mrgn-10-top pricing-title-subtext">
+                                    How much should I contribute to offset my expenses?
+                                </div>
+                                <div class="mrgn-50-top contribution-guide-calculator">
+                                    <div class="row">
+                                        <div class="col-sm-8 expenses-group"> 
+                                            <div class="guide-calc-title">
+                                                Current Expenses
+                                            </div>
+                                            <div class="mrgn-30-top guide-expense-title">
+                                                Vehicle (charging, gas, maintenance)<span class="expense-val vehicle-val"></span>
+                                            </div>
+                                            <input type="range" min="0" max="500" value="100" step="10" class="mrgn-20-top vehicle-slider expense-slider">
+                                            <div class="mrgn-30-top guide-expense-title">
+                                                Necessities (food, bills)<span class="expense-val necessities-val"></span>
+                                            </div>
+                                            <input type="range" min="0" max="1000" value="300" step="10" class="mrgn-20-top necessities-slider expense-slider">
+                                            <div class="mrgn-30-top guide-expense-title">
+                                                Leisure (travel, entertainment, gifts)<span class="expense-val leisure-val"></span>
+                                            </div>
+                                            <input type="range" min="0" max="500" value="50" step="10" class="mrgn-20-top leisure-slider expense-slider">
+                                            <div class="mrgn-30-top  expense-total">
+                                                Total:<span class="expense-val total-val"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="expense-results">
+                                                <div class="expense-result-title">
+                                                    Your recommended contribution amount
+                                                </div>
+                                                <span class="expense-result-value"></span>
+                                                <div class="expense-result-details">
+                                                    *Based on average income of 5-year agressive contribution plan
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script>
+                                        var VehicleExpenses = $('.vehicle-slider').val();
+                                        var NecessitiesExpenses = $('.necessities-slider').val();
+                                        var LeisureExpenses = $('.leisure-slider').val();
+                                        var TotalExpenses = numberWithCommas(Number(VehicleExpenses) + Number(NecessitiesExpenses) + Number(LeisureExpenses));
+
+
+                                        $('.vehicle-val').html('$' + VehicleExpenses + " / mo");
+                                        $('.necessities-val').html('$' + NecessitiesExpenses + " / mo");
+                                        $('.leisure-val').html('$' + LeisureExpenses + " / mo");
+                                        $('.total-val').html('$' + TotalExpenses + " / mo");  
+                                        UpdateExpenseResults();
+
+                                        $('.vehicle-slider').on('input', function() {
+                                            VehicleExpenses = $(this).val();
+                                            $('.vehicle-val').html('$' + VehicleExpenses + " / mo");
+                                        });
+
+                                        $('.necessities-slider').on('input', function() {
+                                            NecessitiesExpenses = $(this).val();
+                                            $('.necessities-val').html('$' + NecessitiesExpenses + " / mo");
+                                        });
+
+                                        $('.leisure-slider').on('input', function() {
+                                            LeisureExpenses = $(this).val();
+                                            $('.leisure-val').html('$' + LeisureExpenses + " / mo");
+                                        });
+
+                                        $('.expenses-group').on('input', '.expense-slider', function(event) {
+                                            TotalExpenses = Number(VehicleExpenses) + Number(NecessitiesExpenses) + Number(LeisureExpenses);
+                                            $('.total-val').html('$' + numberWithCommas(TotalExpenses) + " / mo");
+                                            UpdateExpenseResults();
+                                        });
+
+                                        function UpdateExpenseResults() {
+                                            var ExpenseResult = 0;
+                                            var MaxLengthTotal = TotalExpenses * 60;
+                                            /*
+                                            MaxMonths represents that max chart slider amount minus our minimum offset. All constants should be moved into a seperate script and defined in one place.
+                                            */
+                                            var MaxMonths = 60 - MinOffset;
+
+                                            //this is the standard compounding interest equation but solving for principal investment
+                                            ExpenseResult = Math.round(MaxLengthTotal / (Math.pow((1 + ContributionInterestRecontribution),(MaxMonths * Scale)) - 1));
+
+                                            $('.expense-result-value').html('$' + numberWithCommas(ExpenseResult) + '*');
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+                            <div class="mrgn-80-top contribution-guide">
+                                <div class="pricing-title">
+                                   Make more by...
+                                </div>
+                                <div class="mrgn-10-top pricing-title-subtext">
+                                    See how small additional deposits can increase your total income over the selected contribution length.
+                                </div>
+                                <div class="mrgn-50-top contribution-tips-container">
+                                    <div class="tip-grid-item contribution-tip-1"> 
+                                        <div class="tip-text">Contribute the price of coffee</div>
+                                        <div class="tip-value" data-value=1100></div>
+                                        <div class="overlay">
+                                            <div class="overlay-title">
+                                                Contribute the price of coffee
+                                            </div>
+                                            <div class="overlay-text">
+                                                The average American spends approximately $1,100 per year, or $3 each day, on coffee.
+                                                <br/>
+                                                <p style="padding-top: 5%">Contribute the same amount a get back enough for multiple refills.</p>
+                                            </div>
+                                            <a href="http://business.time.com/2012/01/23/how-much-you-spend-each-year-on-coffee-gas-christmas-pets-beer-and-more/" target="_blank" class="overlay-more-info">More Info</a>
+                                        </div>
+                                    </div>
+                                    <div class="tip-grid-item contribution-tip-2"> 
+                                        <div class="tip-text">Invest your annual tax return</div>
+                                        <div class="tip-value" data-value=3050></div>
+                                        <div class="overlay">
+                                            <div class="overlay-title">
+                                                Invest your annual tax return
+                                            </div>
+                                            <div class="overlay-text">
+                                                The average tax refund in the US is $3,050 per year.
+                                                <br/>
+                                                <p style="padding-top: 5%">Invest it back for an even larger return next year.</p>
+                                            </div>
+                                            <a href="https://www.cnbc.com/2017/04/17/heres-the-average-tax-refund-people-get-in-every-us-state.html" target="_blank" class="overlay-more-info">More Info</a>
+                                        </div>
+                                    </div>
+                                    <div class="tip-grid-item contribution-tip-3"> 
+                                        <div class="tip-text">
+                                            Match your monthly Netflix or Hulu subscription
+                                        </div>
+                                        <div class="tip-value" data-value=96></div>
+                                        <div class="overlay">
+                                            <div class="overlay-title">
+                                                Match your monthly Netflix or Hulu subscription
+                                            </div>
+                                            <div class="overlay-text">
+                                                Video streaming subscriptions cost an average of $8 per month.
+                                                <br/>
+                                                <p style="padding-top: 5%">Turn contributing into a subscription and use the income to cover streaming services.</p>
+                                            </div>
+                                            <a href="http://business.time.com/2012/01/23/how-much-you-spend-each-year-on-coffee-gas-christmas-pets-beer-and-more/" target="_blank" class="overlay-more-info">More Info</a>
+                                        </div>
+                                    </div>
+                                    <div class="tip-grid-item contribution-tip-2"> 
+                                        <div class="tip-text">
+                                            Have a home-cooked meal once a week
+                                        </div>
+                                        <div class="tip-value" data-value=600></div>
+                                        <div class="overlay">
+                                            <div class="overlay-title">
+                                                Have a home-cooked meal once a week
+                                            </div>
+                                            <div class="overlay-text">
+                                                The average cost of dining out is $12.75 per person, or approximately $50 per month.
+                                                <br/>
+                                                <p style="padding-top: 5%">Feed your contribution account and before long your income will feed you.</p>
+                                            </div>
+                                            <a href="https://www.thesimpledollar.com/dont-eat-out-as-often-188365/" target="_blank" class="overlay-more-info">More Info</a>
+                                        </div>
+                                    </div>
+                                    <div class="tip-grid-item contribution-tip-3"> 
+                                        <div class="tip-text">
+                                            Moonlight as an Uber or Lyft driver once a month
+                                        </div>
+                                        <div class="tip-value" data-value=1315></div>
+                                        <div class="overlay">
+                                            <div class="overlay-title">
+                                                Moonlight as an Uber or Lyft driver once a month
+                                            </div>
+                                            <div class="overlay-text">
+                                                The average Uber driver makes approximately $13.70 per hour, or $110 per 8-hour day.
+                                                <br/>
+                                                <p style="padding-top: 5%">Drive your car, drive up your income.</p>
+                                            </div>
+                                            <a href="https://www.ridester.com/2018-survey/" target="_blank" class="overlay-more-info">More Info</a>
+                                        </div>
+                                    </div>
+                                    <div class="tip-grid-item contribution-tip-1"> 
+                                        <div class="tip-text">
+                                            Cut your monthly driving by a tank of gas
+                                        </div>
+                                        <div class="tip-value" data-value=480></div>
+                                        <div class="overlay">
+                                            <div class="overlay-title">
+                                                Cut your monthly driving by a tank of gas
+                                            </div>
+                                            <div class="overlay-text">
+                                                The average price of gasoline in the US is $3.15. Filling a 12-gallon fuel tank costs approximately $40.<br/>
+                                                <p style="padding-top: 5%">Carpool to work and get help save up enough for a new ride.</p>
+                                            </div>
+                                            <a href="https://www.bloomberg.com/graphics/gas-prices/#20183:United-States:USD:g" target="_blank" class="overlay-more-info">More Info</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mrgn-30-top tip-results-disclaimer">
+                                    *Based on <span class="disclaimer-length"></span> agressive contribution plan
+                                </div>
+                                <script>
+
+                                    function updateTipNumbers() {
+                                        var tips = $('.contribution-tips-container').find('.tip-value');
+
+                                        for (var i = 0; i < tips.length; i++) {
+                                            var tip = tips[i];
+                                            var TipAddition = Math.round(tip.dataset.value / 12);
+
+                                            var ContributionIncome = (((TipAddition * Math.pow((1 + ContributionInterestRecontribution),(ContributionLength * Scale)) - TipAddition) / ContributionInterestRecontribution) - TipAddition * (ContributionLength * Scale));
+
+                                            $(tip).html('$' + kFormatter(Math.round(ContributionIncome)) + '*');
+                                        }
+
+                                        if ( ContributionLength > MonthsPerYear ) {
+                                            $('.disclaimer-length').html((ContributionLength/MonthsPerYear).toFixed(1) + '-year');
+                                        }
+                                        else {
+                                            $('.disclaimer-length').html(ContributionLength.toString() + '-month');
+                                        }
+                                    }
+                                </script>
+                            </div>
+                            <div class="mrgn-80-top contribution-guide">
+                                <div class="contribution-info">
+                                    <div class="info-header">
+                                        <div class="mrgn-20-top info-title">
+                                            How the Pricing<br/>Calculator works
+                                        </div>
+                                        <div class="mrgn-20-top info-subtitle">
+                                            Understand the science behind this tool.
+                                        </div>
+                                    </div>
+                                    <div style="margin-top: -1px; height: 100px; position: static;">
+                                        <svg viewBox="0 0 500 200" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                                            <defs>
+                                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                    <stop offset="0%" style="stop-color:rgb(67,161,248);stop-opacity:1" />
+                                                    <stop offset="100%" style="stop-color:rgb(164, 143, 244);stop-opacity:1" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path id="container-wave-1" d="M0.00,92.27 C216.83,292.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="mrgn-50-top info-section">
+                                        <div class="info-section-title">
+                                            What do Agressive and Conservative mean?
+                                        </div>
+                                        <div class="info-section-text">
+                                            <br/>
+                                            The Investment Calculator uses two investment strategies that typically produce two different retirement scenarios. Aggressive investing indicates a higher financial risk with a higher potential reward, while conservative investing offers a lower financial risk with a more moderate potential reward.
+                                            <br/><br/><br/>
+                                            Aggressive investing typically means that you will invest in more stocks than in bonds. This type of investment strategy is smart when you have a longer amount of time before your retirement. A longer amount of time can also, in theory, withstand all the volatility of the stock market. The other good news is that more time passing will compound your interest, resulting in significantly larger retirement savings.
+                                            <br/><br/><br/>
+                                            Conservative investing is a more balanced strategy in which you invest in stocks as well as bonds. The return, or the amount that your money grows, is not as large as it can be when aggressively investing but the risk is lower. Conservative investing is best when your retirement date is nearby. Vanguard published a great article about these types of scenarios, showing the historic risks and rewards in quantitative form. These table graphs will show the different strategies in terms of being “growth” or “balanced” oriented and displays the assumptions behind each retirement strategy.
+                                        </div>
+                                    </div>
+                                    <div class="mrgn-50-top info-section">
+                                        <div class="info-section-title">
+                                            How is Monthly Income Calculated?
+                                        </div>
+                                        <div class="info-section-text">
+                                            <br/>
+                                            The Investment Calculator uses two investment strategies that typically produce two different retirement scenarios. Aggressive investing indicates a higher financial risk with a higher potential reward, while conservative investing offers a lower financial risk with a more moderate potential reward.
+                                            <br/><br/><br/>
+                                            Aggressive investing typically means that you will invest in more stocks than in bonds. This type of investment strategy is smart when you have a longer amount of time before your retirement. A longer amount of time can also, in theory, withstand all the volatility of the stock market. The other good news is that more time passing will compound your interest, resulting in significantly larger retirement savings.
+                                            <br/><br/><br/>
+                                            Conservative investing is a more balanced strategy in which you invest in stocks as well as bonds. The return, or the amount that your money grows, is not as large as it can be when aggressively investing but the risk is lower. Conservative investing is best when your retirement date is nearby. Vanguard published a great article about these types of scenarios, showing the historic risks and rewards in quantitative form. These table graphs will show the different strategies in terms of being “growth” or “balanced” oriented and displays the assumptions behind each retirement strategy.
+                                        </div>
+                                    </div>
+                                    <div class="mrgn-50-top info-section">
+                                        <div class="info-section-title">
+                                            How accurate is the calculator?
+                                        </div>
+                                        <div class="info-section-text">
+                                            <br/>
+                                            The Investment Calculator uses two investment strategies that typically produce two different retirement scenarios. Aggressive investing indicates a higher financial risk with a higher potential reward, while conservative investing offers a lower financial risk with a more moderate potential reward.
+                                            <br/><br/><br/>
+                                            Aggressive investing typically means that you will invest in more stocks than in bonds. This type of investment strategy is smart when you have a longer amount of time before your retirement. A longer amount of time can also, in theory, withstand all the volatility of the stock market. The other good news is that more time passing will compound your interest, resulting in significantly larger retirement savings.
+                                            <br/><br/><br/>
+                                            Conservative investing is a more balanced strategy in which you invest in stocks as well as bonds. The return, or the amount that your money grows, is not as large as it can be when aggressively investing but the risk is lower. Conservative investing is best when your retirement date is nearby. Vanguard published a great article about these types of scenarios, showing the historic risks and rewards in quantitative form. These table graphs will show the different strategies in terms of being “growth” or “balanced” oriented and displays the assumptions behind each retirement strategy.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                Interested in getting a financial return on a rapidly growing industry?<br><Br>
                                 Not wanting to be directly invested but want to be a part of something big?<br><br>
                                 Through our entry level contributor program, you can chose to contribute from $100 up
                                 to
@@ -147,7 +1266,8 @@
                                     page</a>.<br><br>
 
                                 Still not sure? Keep up to date with our blog or stay connected with us through email
-                                updates.</p>
+                                updates.
+                                </p>
                         </div>
                     </div>
 
@@ -275,20 +1395,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
 
 
     <footer class="footer">
