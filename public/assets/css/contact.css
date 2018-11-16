@@ -10,3 +10,51 @@
 #main-container {
     min-height: 600px;
 }
+
+/* MAILCHIMP */
+.subscribe {
+    padding: 0px 165px 0px 330px !important;
+}
+
+
+#mc_embed_signup {
+    /* background: #4B4B4B; */
+    clear: left;
+    font: 20px 'Crimson Text', serif;
+    border-radius: .25em;
+    color: #4B4B4B;
+    width: 50%;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#mce-EMAIL {
+    width: 140px;
+    border: groove #2575B2 1px;
+    border-radius: .25rem;
+    font-size: 16px;
+    height: 2.25em;
+}
+
+#mc-embedded-subscribe {
+    vertical-align: baseline;
+}
+
+.btn-secondary {
+    background-color: #2575B2;
+    color: #FDFDFD;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: .25rem;
+    border: #FDFDFD solid 1px;
+}
+
+#mc_embed_signup .mc-field-group input {
+    font-size: initial;
+}
+
+#mc_embed_signup .datefield .monthfield input, #mc_embed_signup .datefield .dayfield input {
+    width: 20%!important;
+}
+
+/* END MAILCHIMP */

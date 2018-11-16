@@ -1,7 +1,10 @@
 .row { 
-    margin-top: 5%;
     margin-left: 0px;
     margin-right: 0px;
+}
+
+.electric {
+    margin-top: 5%;
 }
 
 #tranquil {
@@ -19,7 +22,7 @@
 
 .caption {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: auto;
     width: auto;
     color: white;
